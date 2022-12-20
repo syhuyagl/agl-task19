@@ -1,3 +1,29 @@
 <section class="c-news">
-    
+  <h2 class="c-news__heading">NEWS</h2>
+  <h3 class="c-news__subheading">ニュースリリース</h3>
+  <div class="c-news__content l-container--1000">
+    <div class="c-news__top">
+      <a href="#"  class="c-news__topbtn"> 一覧を見る</a>
+    </div>
+    <div class="c-news__items">
+        <% if (typeof news != 'undefined') { %>
+            <% news.items && news.items.forEach((item,index) => { %>
+            <a class="c-news__item">
+                <div class="c-news__itemcontent">
+                  <span class="c-news__date"><%= item.date %> </span>
+                  <div class="c-news__categories">
+                    <% item.category&& item.category.forEach((cate,index) => { %>
+                        <span class="c-news__category"><%= cate %></span>
+                    <% }) %>
+                  </div>
+                  <h3 class="c-news__title"><%= item.title %></h3>
+                </div>
+                <span class="c-news__itembtn">&nbsp;</span>
+                <img class="c-news__dotted" src="./assets/img/dotted.png" alt="<%= item.title %>">
+            </a>
+            <% }) %>
+        <% } %>
+    </div>
+  </div>
+  
 </section>
