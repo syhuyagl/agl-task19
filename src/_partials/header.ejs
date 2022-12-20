@@ -1,15 +1,14 @@
-<header >
+<header class="c-header">
   <div class="c-header__top">
-    <div class="c-header__topitem">
+    <div class="c-header__topitem l-container">
       <a class="c-header__news" href="#">ニュースリリース</a>
       <a class="c-header__faq" href="#">よくあるご質問</a>
     </div>
   </div>
-  <div class="c-header">
-   
+  <div class="c-header__main l-container">
     <h1 class="c-header__logo"><a href="<%= BASE_URL %>index.html"><img src="/assets/img/logo.png" alt="Logo"></a></h1>
-    <nav class="c-gnav">
-      <ul>
+    <nav class="c-header__items">
+      <ul class="c-gnav">
         <% if (typeof linklists != 'undefined') { %>
           <% linklists.main && linklists.main.forEach(link => { %>
             <li>

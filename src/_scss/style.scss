@@ -8,16 +8,16 @@
 @import "0_base/mixin";
 
 .sp-only {
-  display: none;
+    display: none;
 }
 @include sp {
-  .pc-only {
-    display: none;
-  }
+    .pc-only {
+        display: none;
+    }
 
-  .sp-only {
-    display: block;
-  }
+    .sp-only {
+        display: block;
+    }
 }
 
 /*≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡

@@ -1,21 +1,24 @@
 /* layout
 ------------------------------------------------------------*/
 body {
-  font-family: $main-fonts;
-  font-size: 1.4rem;
-  line-height: 1.5;
-  @include sp {
-    min-width: 320px;
-  }
+    font-family: $main-fonts;
+    font-size: 1.4rem;
+    line-height: 1.5;
+    font-weight: 500;
+    @include sp {
+        min-width: 320px;
+    }
 }
 //-------------------------------------------------------
 
 //-------------------------------------------------------
 .c-heading {
-  font-size: 3rem;
-  font-weight: 600;
-  color: #222;
+    font-size: 3rem;
+    font-weight: 600;
+    color: #222;
 }
+
 .l-container {
+    max-width: 1140px;
 }
 //-------------------------------------------------------
