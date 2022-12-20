@@ -2,9 +2,213 @@
 title
 ------------------------------------------------------------*/
 
-
 /*
 ------------------------------------------------------------*/
-.c-title1 {
-	
+
+@font-face {
+    font-family: "HiraginoMincho";
+    src: url("../../assets/fonts/HiraginoMinchoPro.otf");
+}
+
+.c-intro {
+    background: #eee;
+    padding: 50px 14px 90px;
+
+    .c-intro__tabs {
+        display: flex;
+        margin-top: 11px;
+    }
+
+    .c-intro__tab {
+        color: #fff;
+        text-align: center;
+        width: 50%;
+        background: $black;
+        padding: 13px 0 17px;
+        line-height: 1.5;
+    }
+
+    .c-intro__tab--active {
+        background: $yellow;
+        position: relative;
+        color: $black;
+
+        &::after {
+            content: "";
+            position: absolute;
+            width: 0;
+            bottom: -10px;
+            left: 50%;
+            transform: translateX(-50%);
+            z-index: 10;
+            height: 0;
+            border-left: 10px solid transparent;
+            border-right: 10px solid transparent;
+            border-top: 10px solid $yellow;
+        }
+    }
+
+    .c-intro__tabtitle {
+        letter-spacing: -0.9px;
+        font-size: 2.2rem;
+        font-family: HiraginoMincho, serif;
+        font-weight: 600;
+    }
+
+    .c-intro__tabsubtitle {
+        font-size: 1.4rem;
+        letter-spacing: -0.4px;
+        font-weight: 500;
+    }
+
+    .c-intro__tabsubtitle--right {
+        transform: translateY(-2px);
+    }
+
+    .c-intro__content {
+        background: #fff;
+        padding-bottom: 64px;
+    }
+
+    .c-intro__service {
+        display: flex;
+        padding: 64px 63px 0;
+    }
+
+    .c-intro__serviceleft {
+        width: 48.3%;
+    }
+
+    .c-intro__serviceimg {
+        width: 100%;
+    }
+
+    .c-intro__serviceright {
+        width: 48.3%;
+        padding-left: 31px;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+    }
+
+    .c-intro__servicetitle {
+        font-size: 2.4rem;
+        color: $black;
+        font-weight: 500;
+        line-height: 1.25;
+        padding-top: 5px;
+        letter-spacing: -1px;
+        max-width: 377px;
+    }
+
+    .c-intro__servicedes {
+        font-size: 1.5rem;
+        color: $black;
+        font-weight: 500;
+        line-height: 1.74;
+        padding-top: 34px;
+        letter-spacing: -1.5px;
+        max-width: 432px;
+    }
+
+    .c-intro__button {
+        background: $yellow;
+        padding: 14px 76px 13px 55px;
+        display: block;
+        font-size: 1.5rem;
+        color: $black;
+        font-weight: 500;
+        width: fit-content;
+        letter-spacing: 0.6px;
+        position: relative;
+        margin-bottom: 5.9%;
+
+        &::after {
+            content: "\f105";
+            font-weight: 900;
+            font-family: "Font Awesome 5 Free";
+            position: absolute;
+            right: 56px;
+        }
+    }
+
+    .c-intro__guide {
+        display: flex;
+        margin-top: 61px;
+        padding: 0 64px;
+        justify-content: space-between;
+    }
+
+    .c-intro__guidelabel {
+        background: $black;
+        color: #fff;
+        padding: 65px 78px 59px 73px;
+        width: 27%;
+        min-width: 264px;
+    }
+
+    .c-intro__guidelabeljp {
+        font-family: HiraginoMincho, serif;
+        font-size: 2rem;
+        font-weight: 600;
+        letter-spacing: -1.3px;
+    }
+
+    .c-intro__guidelabelen {
+        font-family: "Open Sans", sans-serif;
+        font-size: 1.3rem;
+        font-weight: 400;
+        transform: translate(17px, -10px);
+    }
+
+    .c-intro__guideitems {
+        display: flex;
+        width: 73%;
+        background: #eee;
+    }
+
+    .c-intro__guideitem {
+        display: flex;
+        justify-content: center;
+        width: 24.7%;
+        flex-direction: column;
+        text-align: center;
+
+        &:nth-child(1) {
+            transform: translateX(24px);
+        }
+
+        &:nth-child(2) {
+            transform: translateX(7px);
+        }
+
+        &:nth-child(3) {
+            transform: translateX(-11px);
+        }
+
+        &:nth-child(4) {
+            transform: translateX(-27px);
+        }
+    }
+
+    .c-intro__guideimg {
+        width: 54%;
+        border-radius: 50%;
+        display: inline-flex;
+        align-self: center;
+        align-self: center;
+        padding-bottom: 3px;
+    }
+
+    .c-intro__guidetext {
+        font-size: 1.5rem;
+        font-weight: 500;
+        letter-spacing: -1.1px;
+        padding-top: 3px;
+    }
+
+    .c-intro__content2 {
+        display: none;
+    }
+  
 }

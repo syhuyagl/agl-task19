@@ -1,7 +1,12 @@
 /* layout
 ------------------------------------------------------------*/
+@font-face {
+    font-family: "YuGothic";
+    src: url("../../assets/fonts/YuGothM.ttc");
+}
+
 body {
-    font-family: $main-fonts;
+    font-family: YuGothic;
     font-size: 1.4rem;
     line-height: 1.5;
     font-weight: 500;
@@ -19,6 +24,14 @@ body {
 }
 
 .l-container {
-    max-width: 1140px;
+    max-width: 1110px;
+    margin: 0 auto;
+    width: 100%;
+}
+
+.l-container--1000 {
+    max-width: 1110px;
+    margin: 0 auto;
+    width: 100%;
 }
 //-------------------------------------------------------

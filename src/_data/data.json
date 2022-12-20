@@ -46,5 +46,56 @@
         "slideIndex": "c-mainvisual__slide3"
       }
     ]
+  },
+  "services":{
+    "items":
+    [
+      {
+        "img": "./assets/img/intro-1.jpg",
+        "title":"お迎え専用電話をしていただければ配車がスムーズです",
+        "des":"さくらタクシーでは、全車で3ナンバーのクラウン・ロイヤルサルーン、スーパーサルーンを使用し、快適な車内空間をご提供いたします。",
+        "btn":"タクシーサービスの特徴を見る",
+        "guide":[
+          {
+            "img": "./assets/img/guide-1.jpg",
+            "title":"タクシーを呼ぶ"
+          },
+          {
+            "img": "./assets/img/guide-2.jpg",
+            "title":"乗り場案内"
+          },
+          {
+            "img": "./assets/img/guide-3.jpg",
+            "title":"料金・チケット"
+          },{
+            "img": "./assets/img/guide-4.jpg",
+            "title":"車両情報"
+          }
+        ]
+      },
+      {
+        "img": "./assets/img/intro-2.jpg",
+        "title":"きめ細やかなサービスで快適な時間をご提供いたします。",
+        "des":"高級車輛とFirst Classのサービスを独占ください。単なる移動ではなく、「時間」「空間」「サービス」をご提供いたします",
+        "btn":"ハイヤーサービスの特徴を見る",
+        "guide":[
+          {
+            "img": "./assets/img/guide-5.jpg",
+            "title":"役員車・社用車"
+          },
+          {
+            "img": "./assets/img/guide-6.jpg",
+            "title":"ドライバー派遣"
+          },
+          {
+            "img": "./assets/img/guide-7.jpg",
+            "title":"スポット利用"
+          },{
+            "img": "./assets/img/guide-8.jpg",
+            "title":"観光ハイヤー"
+          }
+        ]
+      }
+    ]
   }
 }
