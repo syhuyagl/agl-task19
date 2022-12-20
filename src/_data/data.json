@@ -30,5 +30,21 @@
         "url": "#"
       }
     ]
+  },
+  "mainvisual": {
+    "slides": [
+      {
+        "mainSlide": "c-mainvisual__mainslide",
+        "slideIndex": "c-mainvisual__slide1"
+      },
+      {
+        "title": "静かなる移動オフィス ～ CrownRoyal Hyblid",
+        "slideIndex": "c-mainvisual__slide2"
+      },
+      {
+        "title": "新しいラインナップ – ハイグレードタクシー",
+        "slideIndex": "c-mainvisual__slide3"
+      }
+    ]
   }
 }

@@ -1,0 +1,23 @@
+<section class="c-mainvisual">
+    <div class="c-mainvisual__slides">
+        <% if (typeof mainvisual != 'undefined') { %>
+            <% mainvisual.slides && mainvisual.slides.forEach(slide => { %>
+                <div class="c-mainvisual__slide <%=slide.slideIndex%>">
+                    <% if (slide.mainSlide) {%>
+                        <div class="c-mainvisual__mainslidetext">
+                            <div class="c-mainvisual__maininner">
+                                <div class="c-mainvisual__heading">
+                                    <h1>First Class Service</h1>
+                                </div>
+                                <h2 class="c-mainvisual__title">積み重ねてきた信頼が、上質なサービスを生み出す。<br>
+                                    あくなきサービスの追求と革新へのチャレンジ！</h2>
+                            </div>
+                        </div>
+                    <%} else { %>
+                        <h2 class="c-mainvisual__title c-mainvisual__subtitle"><%=slide.title%></h2>
+                    <%}%>
+                </div>
+            <% }) %>
+          <% } %>
+    </div>
+</section>

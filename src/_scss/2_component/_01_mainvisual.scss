@@ -5,10 +5,56 @@ btn
 /*
 ------------------------------------------------------------*/
 .c-mainvisual {
-    display: inline-block;
-    padding: 10px 50px;
-    font-size: 1.6rem;
-    border: 2px solid #fff;
-    border-radius: 20px;
-    line-height: 1;
+    position: relative;
+
+    .c-mainvisual__slide {
+        height: 538px;
+        width: 100%;
+        background-size: cover;
+        background-position: center;
+    }
+
+    .c-mainvisual__heading {
+        background-position: center;
+        background-size: cover;
+        height: 60px;
+        width: 614px;
+        margin: 179px auto 50px;
+        transform: translateX(10px);
+        background-image: url("../../assets/img/mv1-text.png");
+
+        h1 {
+            text-indent: -9999px;
+        }
+    }
+
+    .c-mainvisual__title {
+        color: #fff;
+        font-size: 2rem;
+        font-weight: 500;
+        text-align: center;
+        text-shadow: 0 0 5px rgba($color: #000, $alpha: 0.9);
+        padding-left: 26px;
+        letter-spacing: -1.1px;
+    }
+
+    .c-mainvisual__subtitle {
+        position: absolute;
+        left: 49.7%;
+        transform: translateX(-50%);
+        top: 46.5%;
+        letter-spacing: -1.8px;
+    }
+
+    .c-mainvisual__slide1 {
+        background-image: url("../../assets/img/mv1.jpg");
+    }
+
+    .c-mainvisual__slide2 {
+        background-image: url("../../assets/img/mv2.jpg");
+    }
+
+    .c-mainvisual__slide3 {
+        background-image: url("../../assets/img/mv3.jpg");
+    }
 }
