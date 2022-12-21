@@ -68,8 +68,11 @@ title
     .c-intro__content {
         background: #fff;
         padding-bottom: 64px;
+        display: none;
     }
-
+    .c-intro__content--active{
+        display: block !important;
+    }
     .c-intro__service {
         display: flex;
         padding: 64px 63px 0;
