@@ -1,9 +1,144 @@
 /*------------------------------------------------------------
 footer
 ------------------------------------------------------------*/
+@font-face {
+  font-family: "HiraginoMincho";
+  src: url("../../assets/fonts/HiraginoMinchoPro.otf");
+}
+@font-face {
+  font-family: "SoukouMincho";
+  src: url("../../assets/fonts/SoukouMincho.ttf");
+}
+
 .c-footer {
-    padding: 20px;
-    background: #051a2b;
+  padding-top: 100px;
+  .c-footer__banner {
+    position: relative;
+    background-image: url("../../assets/img/footer-banner.jpg");
+    background-size: cover;
+    background-position: center;
+    height: 410px;
+  }
+  .c-footer__bannercontent {
+    position: absolute;
+    width: 100%;
+    top: 48%;
+    transform: translateY(-50%);
+  }
+  .c-footer__title {
+    font-size: 2.8rem;
+    font-family: HiraginoMincho, serif;
     color: #fff;
+    text-shadow: 0px 0px 16px rgba(0, 0, 0, 0.92);
     text-align: center;
+  }
+  .c-footer__info {
+    display: flex;
+    color: #fff;
+    margin-top: 39px;
+    justify-content: space-between;
+  }
+  .c-footer__tel {
+    padding: 14px 54px 2px;
+    background: #000;
+    opacity: 0.7;
+    border: 1px solid #fff;
+    line-height: 1.3;
+  }
+  .c-footer__tellabel {
+    font-weight: 500;
+    font-size: 1.4rem;
+    text-align: center;
+  }
+  .c-footer__number {
+    font-family: SoukouMincho, serif;
+    font-size: 3rem;
+  }
+  .c-footer__bannerlink {
+    padding: 25px 87px 2px 49px;
+    font-size: 2rem;
+    background: #82141a;
+    letter-spacing: 1.3px;
+    position: relative;
+    font-weight: 500;
+    &::after {
+      content: "\f105";
+      font-weight: 900;
+      font-family: "Font Awesome 5 Free";
+      position: absolute;
+      right: 15%;
+      top: 32.5%;
+    }
+  }
+  .c-footer__addresswrapper{
+    display: flex;
+    margin-top: 39px;
+  }
+  .c-footer__address{
+    font-size: 1.5rem;
+    font-weight: 500;
+    color: $black;
+    padding-top: 3px;
+    padding-left: 69px;
+    line-height: 1.93;
+    letter-spacing: -0.2px;
+  }
+  .c-footer__externallink{
+    color: $black;
+    font-size: 1.5rem;
+    margin-top: 40px;
+    padding-top: 45px;
+    padding-bottom: 44px;
+    border-top: 1px solid #ccc;
+  }
+  .c-footer__links{
+    padding-top: 14px;
+  }
+  .c-footer__link{
+    font-size: 1.3rem;
+    position: relative;
+    padding-left: 13px;
+    letter-spacing: 0.4px;
+    &::after {
+      content: "\f105";
+      font-weight: 900;
+      font-family: "Font Awesome 5 Free";
+      position: absolute;
+      left: -0.1%;
+      top: 6.4%;
+    }
+    &:not(:first-child){
+      padding-top: 7px;
+      &::after {
+        content: "\f105";
+        font-weight: 900;
+        font-family: "Font Awesome 5 Free";
+        position: absolute;
+        left: -0.1%;
+        top: 20.4%;
+      }
+    }
+  }
+  .c-footer__items{
+    display: flex;
+  }
+  .c-footer__item{
+    display: flex;
+    justify-content: space-between;
+    flex-direction: column;
+    height: 203px;
+    width: 25%;
+  }
+  .c-footer__labelbot{
+    letter-spacing: 1px;
+  }
+  .c-footer__copyright{
+    text-align: center;
+    font-size: 1.2rem;
+    font-weight: 500;
+    color: #fff;
+    background: $black;
+    padding: 20px 0;
+    letter-spacing: 0.9px;
+  }
 }

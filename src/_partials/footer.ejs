@@ -1,5 +1,54 @@
 <footer class="c-footer">
-  <div class="l-container">
-    ©2019 ALLGROW LABO Inc.
+  <div class="c-footer__banner">
+    <div class="c-footer__bannercontent">
+      <h2 class="c-footer__title">タクシー・ハイヤーのお問い合わせ</h2>
+      <div class="c-footer__info l-container">
+        <div class="c-footer__tel">
+          <p class="c-footer__tellabel">タクシー配車（配車専用ダイヤル）</p>
+          <a class="c-footer__telnumber" href="tel:0664520055">TEL. <span class="c-footer__number">06-6452-0055</span></a>
+        </div>
+        <div class="c-footer__tel">
+          <p class="c-footer__tellabel">ハイヤーのお問い合わせ</p>
+          <a class="c-footer__telnumber" href="tel:0664587088">TEL. <span class="c-footer__number">06-6458-7088</span></a>
+        </div>
+        <a class="c-footer__bannerlink" href="#">メールで問い合わせる</a>
+      </div>
+    </div>
   </div>
-</footer> 
+  <div class="l-container">
+    <div class="c-footer__addresswrapper">
+      <div class="c-footer__logo">
+        <img src="./assets/img/logo.png" alt="" />
+      </div>
+      <div class="c-footer__address">
+        <p>〒553-0003 大阪市福島区福島6丁目2番6号 大阪安藤ハザマビル8階</p>
+        <div class="c-footer__telnfax">
+          <a href="tel:0664585471">TEL:06-6458-5471(代表)/ </a>
+          <a href="fax:0664580107">FAX:06-6458-0107</a>
+        </div>
+      </div>
+    </div>
+    <div class="c-footer__externallink">
+      <div class="c-footer__items">
+        <% if (typeof footerLinks != 'undefined') { %>
+          <% footerLinks.items && footerLinks.items.forEach((item,index) => { %>
+            <div class="c-footer__item">
+              <div>
+                <span class="c-footer__labeltop"><%=item.labelTop%></span>
+                <ul class="c-footer__links">
+                    <% item.links && item.links.forEach((item,index) => { %>
+                      <li class="c-footer__link"><a href="#"><%=item%></a></li>
+                    <% }) %>
+                </ul>
+              </div>
+              <span class="c-footer__labelbot"><%=item.labelBot%></span>
+            </div>
+          <% }) %>
+        <% } %>
+      </div>
+    </div>
+  </div>
+  <div class="c-footer__copyright">
+    © さくらタクシー All Right Reserved.
+  </div>
+</footer>
