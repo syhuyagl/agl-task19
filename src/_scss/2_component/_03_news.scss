@@ -97,10 +97,11 @@ icon
         letter-spacing: -0.4px;
         line-height: 1.4;
     }
-
+    .c-news__categories{
+        padding-left: 33px;
+    }
     .c-news__category {
         display: inline-block;
-        margin-left: 33px;
         padding: 3px 30px;
         line-height: 1.4;
         background: $yellow;
