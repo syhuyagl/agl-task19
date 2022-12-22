@@ -119,10 +119,11 @@ form
       top: 27.4%;
     }
     @include sp {
-      width: 63.6%;
-      padding: 7px 32px 3px 70px;
-      margin-top: 67.9%;
-      letter-spacing: 1.1px;
+      width: auto;
+      padding: 7px 48px 3px 18px;
+      margin-top: 190px;
+      letter-spacing: 1px;
+      text-align: center;
       &::after {
         right: 25.3%;
         top: 17.7%;
