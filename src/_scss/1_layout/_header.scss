@@ -144,8 +144,8 @@
     transition: 0.4s;
     transform: translateX(100%);
     @include sp {
-      height: -webkit-calc(100% - 58px);
-      margin-top: 58px;
+      height: -webkit-calc(100% - 56px);
+      margin-top: 56px;
     }
   }
   .c-header__overlay--active {

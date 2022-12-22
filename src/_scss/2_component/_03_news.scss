@@ -123,6 +123,19 @@ icon
       left: -17px;
       top: -2px;
     }
+    @include sp {
+      margin-top: 23px;
+      background: $yellow;
+      padding: 9px 31px 5px 0;
+      text-align: center;
+      font-size: 1.6rem;
+      letter-spacing: -0.9px;
+      &::after {
+        top: 22%;
+        right: 31.7%;
+        left: initial;
+      }
+    }
   }
 
   .c-news__itembtn {

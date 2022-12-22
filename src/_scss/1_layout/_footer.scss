@@ -12,6 +12,9 @@ footer
 
 .c-footer {
   padding-top: 100px;
+  @include sp {
+    padding-top: 35px;
+  }
   .c-footer__banner {
     position: relative;
     background-image: url("../../assets/img/footer-banner.jpg");
@@ -19,6 +22,7 @@ footer
     background-position: center;
     height: 410px;
     @include sp {
+      height: 322px;
       background-image: url("../../assets/img/footer-banner-sp.jpg");
     }
   }
@@ -27,6 +31,9 @@ footer
     width: 100%;
     top: 48%;
     transform: translateY(-50%);
+    @include sp {
+      top: 48.8%;
+    }
   }
   .c-footer__title {
     font-size: 2.8rem;
@@ -34,6 +41,10 @@ footer
     color: #fff;
     text-shadow: 0px 0px 16px rgba(0, 0, 0, 0.92);
     text-align: center;
+    @include sp {
+      font-size: 2rem;
+      letter-spacing: -2.7px;
+    }
   }
   .c-footer__info {
     display: flex;
@@ -43,6 +54,10 @@ footer
     @include tab {
       flex-direction: column;
       width: 50%;
+    }
+    @include sp {
+      width: 100%;
+      margin-top: 32px;
     }
   }
   .c-footer__tel {
@@ -60,15 +75,40 @@ footer
         margin-top: 0;
       }
     }
+    @include sp {
+      padding: 7px 9px 2px;
+      width: 93.2%;
+      margin: 0 auto;
+      text-align: center;
+      &:nth-child(2) {
+        margin-top: 13px;
+      }
+    }
   }
   .c-footer__tellabel {
     font-weight: 500;
     font-size: 1.4rem;
     text-align: center;
+    @include sp {
+      font-size: 1.5rem;
+      letter-spacing: -1.6px;
+    }
   }
   .c-footer__number {
     font-family: SoukouMincho, serif;
     font-size: 3rem;
+    @include sp {
+      font-size: 2rem;
+    }
+  }
+  .c-footer__telnumber {
+    @include sp {
+      font-size: 1.5rem;
+      text-align: center;
+      padding-top: 4px;
+      display: block;
+      letter-spacing: -0.3px;
+    }
   }
   .c-footer__bannerlink {
     padding: 25px 87px 2px 49px;
@@ -92,6 +132,17 @@ footer
       margin-top: 30px;
       padding: 24px 58px 22px 49px;
     }
+    @include sp {
+      font-size: 1.5rem;
+      width: 59.9%;
+      margin: 13px auto 0;
+      padding: 19px 51px 17px 52px;
+      letter-spacing: -0.2px;
+      &::after {
+        right: 19%;
+        top: 32.7%;
+      }
+    }
   }
   .c-footer__addresswrapper {
     display: flex;
@@ -100,6 +151,10 @@ footer
       flex-direction: column;
       align-items: center;
       margin-bottom: 39px;
+    }
+    @include sp {
+      margin-top: 30px;
+      margin-bottom: 15px;
     }
   }
   .c-footer__address {
@@ -113,6 +168,11 @@ footer
     @include tab {
       padding-left: 0;
       text-align: center;
+    }
+    @include sp {
+      font-size: 1.3rem;
+      padding-top: 16px;
+      line-height: 1.53;
     }
   }
   .c-footer__externallink {
@@ -151,6 +211,11 @@ footer
       }
     }
   }
+  .c-footer__logo {
+    @include sp {
+      width: 181px;
+    }
+  }
   .c-footer__items {
     display: flex;
   }
@@ -164,6 +229,11 @@ footer
   .c-footer__labelbot {
     letter-spacing: 1px;
   }
+  .c-footer__telnfax {
+    @include sp {
+      letter-spacing: -0.3px;
+    }
+  }
   .c-footer__copyright {
     text-align: center;
     font-size: 1.2rem;
@@ -172,5 +242,9 @@ footer
     background: $black;
     padding: 20px 0;
     letter-spacing: 0.9px;
+    @include sp {
+      padding: 10px 0 9px;
+      letter-spacing: 0px;
+    }
   }
 }

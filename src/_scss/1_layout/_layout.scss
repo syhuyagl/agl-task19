@@ -50,6 +50,15 @@ body {
     display: none;
   }
 }
+.is-pcntab {
+  display: block;
+  @include tab {
+    display: block;
+  }
+  @include sp {
+    display: none;
+  }
+}
 .is-tab {
   display: none;
   @include tab {
