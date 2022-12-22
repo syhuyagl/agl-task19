@@ -18,6 +18,9 @@ footer
     background-size: cover;
     background-position: center;
     height: 410px;
+    @include sp {
+      background-image: url("../../assets/img/footer-banner-sp.jpg");
+    }
   }
   .c-footer__bannercontent {
     position: absolute;
@@ -37,6 +40,10 @@ footer
     color: #fff;
     margin-top: 39px;
     justify-content: space-between;
+    @include tab {
+      flex-direction: column;
+      width: 50%;
+    }
   }
   .c-footer__tel {
     padding: 14px 54px 2px;
@@ -46,6 +53,12 @@ footer
     line-height: 1.3;
     @include medium {
       padding: 14px 40px 2px;
+    }
+    @include tab {
+      margin-top: 30px;
+      &:first-child {
+        margin-top: 0;
+      }
     }
   }
   .c-footer__tellabel {
@@ -75,12 +88,21 @@ footer
     @include medium {
       padding: 25px 58px 2px 49px;
     }
+    @include tab {
+      margin-top: 30px;
+      padding: 24px 58px 22px 49px;
+    }
   }
-  .c-footer__addresswrapper{
+  .c-footer__addresswrapper {
     display: flex;
     margin-top: 39px;
+    @include tab {
+      flex-direction: column;
+      align-items: center;
+      margin-bottom: 39px;
+    }
   }
-  .c-footer__address{
+  .c-footer__address {
     font-size: 1.5rem;
     font-weight: 500;
     color: $black;
@@ -88,8 +110,12 @@ footer
     padding-left: 69px;
     line-height: 1.93;
     letter-spacing: -0.2px;
+    @include tab {
+      padding-left: 0;
+      text-align: center;
+    }
   }
-  .c-footer__externallink{
+  .c-footer__externallink {
     color: $black;
     font-size: 1.5rem;
     margin-top: 40px;
@@ -97,10 +123,10 @@ footer
     padding-bottom: 44px;
     border-top: 1px solid #ccc;
   }
-  .c-footer__links{
+  .c-footer__links {
     padding-top: 14px;
   }
-  .c-footer__link{
+  .c-footer__link {
     font-size: 1.3rem;
     position: relative;
     padding-left: 13px;
@@ -113,7 +139,7 @@ footer
       left: -0.1%;
       top: 6.4%;
     }
-    &:not(:first-child){
+    &:not(:first-child) {
       padding-top: 7px;
       &::after {
         content: "\f105";
@@ -125,20 +151,20 @@ footer
       }
     }
   }
-  .c-footer__items{
+  .c-footer__items {
     display: flex;
   }
-  .c-footer__item{
+  .c-footer__item {
     display: flex;
     justify-content: space-between;
     flex-direction: column;
     height: 203px;
     width: 25%;
   }
-  .c-footer__labelbot{
+  .c-footer__labelbot {
     letter-spacing: 1px;
   }
-  .c-footer__copyright{
+  .c-footer__copyright {
     text-align: center;
     font-size: 1.2rem;
     font-weight: 500;

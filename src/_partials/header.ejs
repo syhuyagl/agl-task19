@@ -6,7 +6,7 @@
     </div>
   </div>
   <div class="c-header__main l-container--1140">
-    <h1 class="c-header__logo"><a href="<%= BASE_URL %>index.html"><img src="/assets/img/logo.png" alt="Logo"></a></h1>
+    <h1 class="c-header__logo"><a href="<%= BASE_URL %>index.html"><img src="./assets/img/logo.png" alt="Logo"></a></h1>
     <nav class="c-header__items is-pc">
       <ul class="c-gnav">
         <% if (typeof linklists != 'undefined') { %>
@@ -28,11 +28,45 @@
       </ul>
     </nav>
     <div class="c-header__menu is-tab">
-      <img class="c-header__icon c-header__icon--active" src="./assets/img/menu-open@2x.png" alt="menu">
-      <img class="c-header__icon" src="./assets/img/menu-close.png" alt="menu">
+      <img class="c-header__icon c-header__open c-header__icon--active" src="./assets/img/menu-open@2x.png" alt="menu">
+      <img class="c-header__icon c-header__close" src="./assets/img/menu-close.png" alt="menu">
     </div>
   </div>
-  <div class="c-header__overlay">
+  <div class="c-header__overlay is-tab">
+    <div class="c-header__overlayitems">
+      <div class="c-header__overlayitem">
+        <a href="#">タクシー</a>
+      </div>
+      <div class="c-header__overlayitem">
+        <a href="#">ハイヤー</a>
+      </div>
+      <div class="c-header__overlayitem">
+        <a href="#">会社情報</a>
+      </div>
+      <div class="c-header__overlayitem">
+        <a href="#">車両情報</a>
+      </div>
+      <div class="c-header__overlayitem">
+        <a href="#">新卒採用</a>
+      </div>
+      <div class="c-header__overlayitem">
+        <a href="#">中途採用</a>
+      </div>
+      <div class="c-header__overlayitem">
+        <a href="#">よくあるご質問</a>
+      </div>
+      <div class="c-header__overlayitem">
+        <a href="#">お問い合わせ</a>
+      </div>
+      <div class="c-header__overlayitem">
+        <a href="#">ニュースリリース</a>
+      </div>
+      <div class="c-header__overlayitem">
+        <a href="#">プライバシーポリシー</a>
+      </div>
+    </div>
+    <div class="c-header__navbanner">
 
+    </div>
   </div>
 </header>

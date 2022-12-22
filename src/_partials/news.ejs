@@ -10,11 +10,13 @@
             <% news.items && news.items.forEach((item,index) => { %>
             <a class="c-news__item" href="#">
                 <div class="c-news__itemcontent">
-                  <span class="c-news__date"><%= item.date %> </span>
-                  <div class="c-news__categories">
-                    <% item.category&& item.category.forEach((cate,index) => { %>
-                        <span class="c-news__category"><%= cate %></span>
-                    <% }) %>
+                  <div class="c-news__label">
+                    <span class="c-news__date"><%= item.date %> </span>
+                    <div class="c-news__categories">
+                      <% item.category&& item.category.forEach((cate,index) => { %>
+                          <span class="c-news__category"><%= cate %></span>
+                      <% }) %>
+                    </div>
                   </div>
                   <h3 class="c-news__title"><%= item.title %></h3>
                 </div>

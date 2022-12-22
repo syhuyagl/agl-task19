@@ -9,18 +9,28 @@ form
   src: url("../../assets/fonts/HiraginoMinchoProW3.otf");
 }
 .c-company {
-    padding-top: 90px;
+  padding-top: 90px;
   .c-company__banner {
     display: flex;
     border-top: 1px solid $black;
     border-bottom: 1px solid $black;
     height: 422px;
+    @include tab {
+      flex-direction: column;
+      height: auto;
+      margin: 0 10px;
+    }
   }
   .c-company__bg {
     width: 50%;
     background-image: url("../../assets/img/company.jpg");
     background-position: center;
     background-size: cover;
+    @include tab {
+      width: 100%;
+      background-image: url("../../assets/img/company-sp.jpg");
+      height: 362px;
+    }
   }
   .c-company__info {
     width: 50%;
@@ -29,6 +39,10 @@ form
     display: flex;
     justify-content: space-between;
     flex-direction: column;
+    @include tab {
+      width: 100%;
+      padding-left: 0;
+    }
   }
   .c-company__infolabel {
     font-family: HiraginoMinchoW3;
@@ -75,7 +89,7 @@ form
       top: 27.4%;
     }
   }
-  .c-company__recruit{
+  .c-company__recruit {
     display: flex;
   }
 }
