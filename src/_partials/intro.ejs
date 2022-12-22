@@ -50,49 +50,42 @@
             <a class="c-intro__tel" href="tel:0664520055"><span class="c-intro__tellabel">TEL.</span>06-6452-0055</a>
             <p class="c-intro__teldes">※別途、お迎え料金がかかります。</p>
         </div>
-        <div class="c-intro__sp">
-            <div class="c-intro__contentsp">
-                <div class="c-intro__tab c-intro__tab1 c-intro__tab--active">
-                    <h3 class="c-intro__tabtitle">タクシーサービス</h3>
-                    <p class="c-intro__tabsubtitle">他社に追随を許さない新サービスの展開</p>
+        <% if (typeof services != 'undefined') { %>
+            <% services.items && services.items.forEach((item,index) => { %>
+                <div class="c-intro__sp">
+                    <div class="c-intro__contentsp">
+                        <div class="c-intro__tab c-intro__tab1 c-intro__tab--active">
+                            <h3 class="c-intro__tabtitle"><%=item.tabTitle%></h3>
+                            <p class="c-intro__tabsubtitle"><%=item.tabSubtitle%></p>
+                        </div>
+                        <div class="c-intro__service c-intro__service">
+                            <div class="c-intro__serviceleft">
+                                <img  class="c-intro__serviceimg" src="<%=item.img%>" alt="<%=item.title%>">
+                            </div>
+                            <div class="c-intro__serviceright">
+                                <div>
+                                    <h2 class="c-intro__servicetitle"><%=item.title%></h2>
+                                    <p class="c-intro__servicedes"><%=item.des%><br><%- item.des2 ? item.des2 : ""%> </p>
+                                </div>
+                                <a class="c-intro__button" href="#"><%=item.btn%></a>
+                            </div>
+                        </div>
+                        <div class="c-intro__guide">
+                            <div class="c-intro__guidelabel">
+                                <p class="c-intro__guidelabeljp">サービス案内</p>
+                            </div>
+                            <div class="c-intro__guideitems">
+                                <% item.guide && item.guide.forEach((guideItem,index) => { %>
+                                    <div class="c-intro__guideitem">
+                                        <img class="c-intro__guideimg" src="<%=guideItem.imgSp%>" alt="<%=guideItem.title%>">
+                                        <span class="c-intro__guidetext"><%=guideItem.title%></span>
+                                    </div>
+                                <% }) %>
+                            </div>
+                        </div> 
+                    </div>
                 </div>
-                <div class="c-intro__service c-intro__service">
-                    <div class="c-intro__serviceleft">
-                        <img  class="c-intro__serviceimg" src="./assets/img/intro-1-sp.jpg" alt="">
-                    </div>
-                    <div class="c-intro__serviceright">
-                        <div>
-                            <h2 class="c-intro__servicetitle">お迎え専用電話をしていただければ、
-                                配車がスムーズです。</h2>
-                            <p class="c-intro__servicedes">さくらタクシーでは、全車で3ナンバーのクラ<br>ウン・ロイヤルサルーン、スーパーサルーンを使用し、快適な車内空間をご提供いたします</p>
-                        </div>
-                        <a class="c-intro__button" href="#">タクシーサービスの特徴を見る</a>
-                    </div>
-                </div>
-                <div class="c-intro__guide">
-                    <div class="c-intro__guidelabel">
-                        <p class="c-intro__guidelabeljp">サービス案内</p>
-                    </div>
-                    <div class="c-intro__guideitems">
-                        <div class="c-intro__guideitem">
-                            <img class="c-intro__guideimg" src="./assets/img/guide-1.jpg" alt="タクシーを呼ぶ">
-                            <span class="c-intro__guidetext">タクシーを呼ぶ</span>
-                        </div>
-                        <div class="c-intro__guideitem">
-                            <img class="c-intro__guideimg" src="./assets/img/guide-1.jpg" alt="タクシーを呼ぶ">
-                            <span class="c-intro__guidetext">タクシーを呼ぶ</span>
-                        </div>
-                        <div class="c-intro__guideitem">
-                            <img class="c-intro__guideimg" src="./assets/img/guide-1.jpg" alt="タクシーを呼ぶ">
-                            <span class="c-intro__guidetext">タクシーを呼ぶ</span>
-                        </div>
-                        <div class="c-intro__guideitem">
-                            <img class="c-intro__guideimg" src="./assets/img/guide-1.jpg" alt="タクシーを呼ぶ">
-                            <span class="c-intro__guidetext">タクシーを呼ぶ</span>
-                        </div>
-                    </div>
-                </div> 
-            </div>
-        </div>
+            <% }) %>
+        <% } %>
     </div>
 </section>
