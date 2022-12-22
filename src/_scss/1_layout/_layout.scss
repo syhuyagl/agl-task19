@@ -28,10 +28,28 @@ body {
     margin: 0 auto;
     width: 100%;
 }
-
+.l-container--1140 {
+    max-width: 1140px;
+    margin: 0 auto;
+    width: 100%;
+    padding-left: 14px !important;
+    padding-right: 14px !important;
+}
 .l-container--1000 {
     max-width: 1000px;
     margin: 0 auto;
     width: 100%;
+}
+.is-pc{
+    display: block;
+    @include tab{
+        display: none;
+    }
+}
+.is-tab{
+    display: none;
+    @include tab{
+        display: block;
+    }
 }
 //-------------------------------------------------------

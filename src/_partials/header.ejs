@@ -1,13 +1,13 @@
 <header class="c-header">
-  <div class="c-header__top">
+  <div class="c-header__top is-pc">
     <div class="c-header__topitem l-container">
       <a class="c-header__news" href="#">ニュースリリース</a>
       <a class="c-header__faq" href="#">よくあるご質問</a>
     </div>
   </div>
-  <div class="c-header__main l-container">
+  <div class="c-header__main l-container--1140">
     <h1 class="c-header__logo"><a href="<%= BASE_URL %>index.html"><img src="/assets/img/logo.png" alt="Logo"></a></h1>
-    <nav class="c-header__items">
+    <nav class="c-header__items is-pc">
       <ul class="c-gnav">
         <% if (typeof linklists != 'undefined') { %>
           <% linklists.main && linklists.main.forEach(link => { %>
@@ -27,6 +27,12 @@
         <% } %>
       </ul>
     </nav>
+    <div class="c-header__menu">
+      <img class="c-header__icon c-header__icon--active" src="./assets/img/menu-open@2x.png" alt="menu">
+      <img class="c-header__icon" src="./assets/img/menu-close.png" alt="menu">
+    </div>
   </div>
-  
+  <div class="c-header__overlay">
+
+  </div>
 </header>
