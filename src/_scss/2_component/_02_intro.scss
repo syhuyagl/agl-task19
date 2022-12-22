@@ -282,7 +282,8 @@ title
   .c-intro__tab1 > .c-intro__tabsubtitle {
     @include sp {
       max-width: 300px;
-      transform: translateX(11px);
+      transform: translateX(0);
+      margin: 0 auto;
     }
   }
   .c-intro__service2 > .c-intro__servicetitle {
