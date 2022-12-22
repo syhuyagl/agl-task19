@@ -16,7 +16,9 @@ title
 .c-intro {
   background: #eee;
   padding: 50px 14px 90px;
-
+  @include sp {
+    padding: 12px 0px 0px;
+  }
   .c-intro__tabs {
     display: flex;
     margin-top: 11px;
@@ -37,6 +39,9 @@ title
     }
     @include tab {
       width: 100%;
+    }
+    @include sp {
+      padding: 8px 0 10px;
     }
   }
 
@@ -74,6 +79,9 @@ title
     font-size: 1.4rem;
     letter-spacing: -0.4px;
     font-weight: 500;
+    @include sp {
+      font-size: 1.3rem;
+    }
   }
 
   .c-intro__tabsubtitle--right {
@@ -92,7 +100,11 @@ title
     display: flex;
     padding: 64px 63px 0;
     @include tab {
+      padding: 0px 63px 0;
       flex-direction: column;
+    }
+    @include sp {
+      padding: 0px 20px 0;
     }
   }
 
@@ -100,6 +112,9 @@ title
     width: 48.3%;
     @include tab {
       width: 100%;
+    }
+    @include sp {
+      padding: 0 22px;
     }
   }
 
@@ -117,6 +132,8 @@ title
       width: 100%;
       padding-left: 0;
     }
+    @include sp {
+    }
   }
 
   .c-intro__servicetitle {
@@ -129,6 +146,12 @@ title
     max-width: 377px;
     @include tab {
       padding-top: 30px;
+    }
+    @include sp {
+      font-size: 1.6rem;
+      padding-top: 14px;
+      max-width: 247px;
+      letter-spacing: -0.7px;
     }
   }
 
@@ -145,6 +168,13 @@ title
       max-width: 566px;
       padding-bottom: 30px;
     }
+    @include sp {
+      padding-top: 15px;
+      max-width: 276px;
+      padding-bottom: 12px;
+      letter-spacing: -1.6px;
+      line-height: 1.25;
+    }
   }
   .c-intro__contentsp {
     background: #fff;
@@ -154,6 +184,13 @@ title
     color: $black;
     font-weight: 500;
     text-align: center;
+    @include sp {
+      font-size: 1.6rem;
+      letter-spacing: -1.3px;
+      max-width: 293px;
+      margin: 0 auto;
+      line-height: 1.3;
+    }
   }
   .c-intro__banner {
     width: fit-content;
@@ -161,22 +198,38 @@ title
     background: #fff;
     text-align: center;
     border: 2px solid rgb(130, 20, 26);
+    @include sp {
+      padding-top: 8px;
+      margin: 10px auto;
+      line-height: 1.56;
+    }
   }
   .c-intro__tel {
     font-family: SoukouMincho, serif;
     font-size: 3rem;
     text-align: center;
+    @include sp {
+      font-size: 2rem;
+    }
   }
   .c-intro__tellabel {
     font-weight: 500;
     font-family: YuGothic;
     font-size: 1.4rem;
     text-align: center;
+    @include sp {
+      font-size: 1.6rem;
+    }
   }
   .c-intro__teldes {
     font-size: 1.6rem;
     font-weight: 500;
     padding: 0 18px 10px;
+    @include sp {
+      font-size: 1.3rem;
+      padding: 3px 44px 8px;
+      letter-spacing: -1.3px;
+    }
   }
   .c-intro__button {
     background: $yellow;
@@ -201,6 +254,15 @@ title
       width: auto;
       text-align: center;
     }
+    @include sp {
+      font-size: 1.6rem;
+      padding: 6px 18px 2px 17px;
+      letter-spacing: -0.8px;
+      text-align: left;
+      &::after {
+        right: 21px;
+      }
+    }
   }
 
   .c-intro__guide {
@@ -212,8 +274,28 @@ title
       flex-direction: column;
       padding: 0 64px 61px;
     }
+    @include sp {
+      margin-top: 3px;
+      padding: 0px 20px 24px;
+    }
   }
-
+  .c-intro__tab1 > .c-intro__tabsubtitle {
+    @include sp {
+      max-width: 300px;
+      transform: translateX(11px);
+    }
+  }
+  .c-intro__service2 > .c-intro__servicetitle {
+    @include sp {
+      max-width: 286px;
+    }
+  }
+  .c-intro__service2 > .c-intro__servicedes {
+    @include sp {
+      letter-spacing: -0.4px;
+      line-height: 1.26;
+    }
+  }
   .c-intro__guidelabel {
     background: $black;
     color: #fff;
@@ -222,7 +304,10 @@ title
     min-width: 264px;
     @include tab {
       width: 100%;
-      text-align: c;
+      text-align: center;
+    }
+    @include sp {
+      padding: 3px 35px 1px 34px;
     }
   }
 
@@ -233,6 +318,10 @@ title
     letter-spacing: -1.3px;
     @include tab {
       text-align: center;
+    }
+    @include sp {
+      letter-spacing: -0.7px;
+      font-size: 1.8rem;
     }
   }
 
@@ -306,6 +395,17 @@ title
         right: 56px;
       }
     }
+    @include sp {
+      margin-top: 15px;
+      padding-left: 20px;
+      margin-bottom: 2px;
+      &::after {
+        right: 21px;
+      }
+      &:last-child {
+        margin-bottom: 8px;
+      }
+    }
   }
 
   .c-intro__guideimg {
@@ -318,6 +418,9 @@ title
       width: 19%;
       align-self: initial;
     }
+    @include sp {
+      width: 19.2%;
+    }
   }
 
   .c-intro__guidetext {
@@ -327,6 +430,8 @@ title
     padding-top: 3px;
     @include tab {
       padding-left: 6%;
+    }
+    @include sp {
     }
   }
 

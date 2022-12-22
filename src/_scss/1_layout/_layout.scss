@@ -1,55 +1,68 @@
 /* layout
 ------------------------------------------------------------*/
 @font-face {
-    font-family: "YuGothic";
-    src: url("../../assets/fonts/YuGothM.ttc");
+  font-family: "YuGothic";
+  src: url("../../assets/fonts/YuGothM.ttc");
 }
 
 body {
-    font-family: YuGothic;
-    font-size: 1.4rem;
-    line-height: 1.5;
-    font-weight: 500;
-    @include sp {
-        min-width: 320px;
-    }
+  font-family: YuGothic;
+  font-size: 1.4rem;
+  line-height: 1.5;
+  font-weight: 500;
+  @include sp {
+    min-width: 320px;
+  }
 }
 //-------------------------------------------------------
 
 //-------------------------------------------------------
 .c-heading {
-    font-size: 3rem;
-    font-weight: 600;
-    color: #222;
+  font-size: 3rem;
+  font-weight: 600;
+  color: #222;
 }
 
 .l-container {
-    max-width: 1110px;
-    margin: 0 auto;
-    width: 100%;
+  max-width: 1110px;
+  margin: 0 auto;
+  width: 100%;
 }
 .l-container--1140 {
-    max-width: 1140px;
-    margin: 0 auto;
-    width: 100%;
-    padding-left: 14px !important;
-    padding-right: 14px !important;
+  max-width: 1140px;
+  margin: 0 auto;
+  width: 100%;
+  padding-left: 14px !important;
+  padding-right: 14px !important;
+  @include sp {
+    padding-left: 10px !important;
+    padding-right: 10px !important;
+  }
 }
 .l-container--1000 {
-    max-width: 1000px;
-    margin: 0 auto;
-    width: 100%;
+  max-width: 1000px;
+  margin: 0 auto;
+  width: 100%;
 }
-.is-pc{
-    display: block;
-    @include tab{
-        display: none;
-    }
-}
-.is-tab{
+.is-pc {
+  display: block;
+  @include tab {
     display: none;
-    @include tab{
-        display: block;
-    }
+  }
+}
+.is-tab {
+  display: none;
+  @include tab {
+    display: block;
+  }
+}
+.is-sp {
+  display: none;
+  @include tab {
+    display: none;
+  }
+  @include sp {
+    display: block;
+  }
 }
 //-------------------------------------------------------

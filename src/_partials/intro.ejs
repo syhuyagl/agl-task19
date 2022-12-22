@@ -44,7 +44,7 @@
         <% } %>
     </div>
     <div class="l-container is-tab">
-        <h4 class="c-intro__teltitle">タクシーのご用命はこちら。
+        <h4 class="c-intro__teltitle">タクシーのご用命はこちら。<br class="is-sp">
             すぐにお近くのタクシーを手配いたします。</h4>
         <div class="c-intro__banner">
             <a class="c-intro__tel" href="tel:0664520055"><span class="c-intro__tellabel">TEL.</span>06-6452-0055</a>
@@ -58,7 +58,7 @@
                             <h3 class="c-intro__tabtitle"><%=item.tabTitle%></h3>
                             <p class="c-intro__tabsubtitle"><%=item.tabSubtitle%></p>
                         </div>
-                        <div class="c-intro__service c-intro__service">
+                        <div class="c-intro__service c-intro__service<%=index+1%>">
                             <div class="c-intro__serviceleft">
                                 <img  class="c-intro__serviceimg" src="<%=item.img%>" alt="<%=item.title%>">
                             </div>

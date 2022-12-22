@@ -15,12 +15,19 @@
     position: relative;
     background: rgba(255, 255, 255, 1);
     margin: 0 auto;
+    @include sp {
+      padding: 7px 0;
+    }
   }
 
   .c-header__logo {
     width: 21%;
     @include tab {
       width: 29%;
+    }
+    @include sp {
+      width: 60.1%;
+      transform: translateY(4px);
     }
   }
 
@@ -111,6 +118,9 @@
   }
   .c-header__menu {
     width: 39px;
+    @include sp {
+      width: 35px;
+    }
   }
   .c-header__icon {
     display: none;
@@ -131,10 +141,15 @@
     height: -webkit-calc(100% - 93px);
     overflow-y: auto;
     overflow-x: hidden;
-    display: none;
+    transition: 0.4s;
+    transform: translateX(100%);
+    @include sp {
+      height: -webkit-calc(100% - 58px);
+      margin-top: 58px;
+    }
   }
   .c-header__overlay--active {
-    display: block;
+    transform: translateX(0);
   }
 }
 /* Main menu

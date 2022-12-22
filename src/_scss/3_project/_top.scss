@@ -2,6 +2,11 @@
 Css of home page
 ------------------------------------------------------------*/
 .p-top {
-    line-height: 2;
+  line-height: 2;
+  @include tab {
     padding-top: 94px;
+  }
+  @include sp {
+    padding-top: 57px;
+  }
 }
