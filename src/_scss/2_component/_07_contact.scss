@@ -103,6 +103,7 @@ text
     }
   }
   .c-contact__radiogroupitems {
+    position: relative;
     &:nth-child(2) {
       @include sp {
         margin-top: 15px;
@@ -118,6 +119,12 @@ text
     color: $black;
     padding-left: 8px;
     letter-spacing: -0.7px;
+    cursor: pointer;
+    transition: 0.4s;
+    &:hover {
+      transition: 0.4s;
+      opacity: 0.7;
+    }
     @include sp {
       padding-left: 6px;
     }
@@ -224,6 +231,7 @@ text
   }
   .c-contact__phone {
     width: 12.1%;
+    position: relative;
     &:not(:first-child) {
       margin-left: 26px;
       position: relative;
@@ -246,7 +254,8 @@ text
     font-size: 1.5rem;
     padding-top: 7px;
     letter-spacing: 1px;
-    padding-left: 0px;
+    padding-left: 1px;
+    padding-right: 5px;
   }
   .c-contact__inputaddress {
     width: 71.4%;
@@ -322,12 +331,19 @@ text
     transform: translateX(-9px);
     margin-top: 35px;
     letter-spacing: 1px;
+    @include sp {
+      text-align: center;
+      transform: translateX(0px);
+    }
   }
   .c-contact__phonelist {
     margin-left: 34px;
     margin-top: 5px;
     letter-spacing: 0px;
     line-height: 1.53;
+    @include sp {
+      margin-left: 0;
+    }
   }
   .c-contact__phonenumber {
     letter-spacing: 0.8px;
@@ -339,9 +355,17 @@ text
     &:not(:first-child) {
       margin-top: 3px;
     }
+    @include sp {
+      flex-direction: column;
+      align-items: center;
+      text-align: center;
+    }
   }
   .c-contact__phonelabel {
     width: 28.1%;
+    @include sp {
+      width: 100%;
+    }
   }
   .c-contact__note {
     margin-top: 28px;
@@ -355,5 +379,23 @@ text
   .c-contact__notelink {
     color: #0600ff;
     text-decoration: underline;
+  }
+  #inquiryType-error {
+    position: absolute;
+    bottom: -20%;
+    left: 0;
+  }
+
+  .c-contact__inputphone {
+    width: 71.4%;
+  }
+  #phone1 {
+    position: relative;
+  }
+  #phone-error {
+    position: absolute;
+    left: 0;
+    width: 301px;
+    top: 41px;
   }
 }

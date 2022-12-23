@@ -1,4 +1,5 @@
 $(document).ready(function () {
+  var $form = $("#form");
   $(".c-mainvisual__slides").slick({
     fade: true,
     speed: 1100,
@@ -46,17 +47,72 @@ $(document).ready(function () {
     }
   });
   $(".c-header__menu").click(function () {
-    if($('.c-header__open').hasClass('c-header__icon--active')){
-      $('.c-header__open').removeClass('c-header__icon--active')
-      $('.c-header__close').addClass('c-header__icon--active')
-      $('.c-header__overlay').addClass('c-header__overlay--active')
-      disableScroll()
+    if ($(".c-header__open").hasClass("c-header__icon--active")) {
+      $(".c-header__open").removeClass("c-header__icon--active");
+      $(".c-header__close").addClass("c-header__icon--active");
+      $(".c-header__overlay").addClass("c-header__overlay--active");
+      disableScroll();
+    } else {
+      $(".c-header__open").addClass("c-header__icon--active");
+      $(".c-header__close").removeClass("c-header__icon--active");
+      $(".c-header__overlay").removeClass("c-header__overlay--active");
+      enableScroll();
     }
-    else {
-      $('.c-header__open').addClass('c-header__icon--active')
-      $('.c-header__close').removeClass('c-header__icon--active')
-      $('.c-header__overlay').removeClass('c-header__overlay--active')
-      enableScroll()
-    }
+  });
+  $("#form").submit(function (e) {
+    e.preventDefault();
+  });
+
+  $form.validate({
+    groups: {
+      phone: "phone1 phone2 phone3",
+    },
+    rules: {
+      phone1:{
+        required: true,
+      },
+      phone2:{
+        required: true,
+      },
+      phone3:{
+        required: true,
+      },
+      address:{
+        required: true,
+      },
+      name: {
+        required: true,
+      },
+      email: {
+        required: true,
+        email: true,
+      },
+      inquiryType: {
+        required: true,
+      },
+    },
+    errorPlacement: function(error, $element) {
+      var name = $element.attr("name");
+      if (name === "phone1" || name === "phone2"|| name === "phone3") {
+        error.insertAfter("#phone1");
+      } else {
+        error.insertAfter($element);
+      }
+    },
+    messages: {
+      name: "お名前を入力してください。",
+      email: "有効なメールアドレスを入力してください。",
+      content: "内容を入力してください。",
+      address: "住所を入力してください。",
+      inquiryType: "質問の種類を選択してください。",
+      phone1: "電話番号を入力してください。",
+      phone2: "電話番号を入力してください。",
+      phone3: "電話番号を入力してください。"
+    },
+ 
+  });
+ 
+  $("#postal").keyup(function () {
+    AjaxZip3.zip2addr(this, "", "postal2", "postal2");
   });
 });

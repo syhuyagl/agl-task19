@@ -15,76 +15,84 @@
               <div class="c-contact__radio u-mt0">
                 <input
                   class="c-radio__button"
-                  id="type"
+                  id="type1"
                   type="radio"
+                  name="inquiryType"
                   value=""
-                />
-                <label class="c-radio__label">コールメンバー登録</label>
+                >
+                <label class="c-radio__label" for="type1">コールメンバー登録</label>
               </div>
               <div class="c-contact__radio">
                 <input
                   class="c-radio__button"
-                  id="type"
+                  id="type2"
+                  name="inquiryType"
                   type="radio"
                   value=""
-                />
-                <label class="c-radio__label">ハイヤーについて</label>
+                >
+                <label class="c-radio__label" for="type2">ハイヤーについて</label>
               </div>
               <div class="c-contact__radio">
                 <input
                   class="c-radio__button"
-                  id="type"
+                  id="type3"
                   type="radio"
+                  name="inquiryType"
                   value=""
-                />
-                <label class="c-radio__label">タクシーチケットについて</label>
+                >
+                <label class="c-radio__label" for="type3">タクシーチケットについて</label>
               </div>
               <div class="c-contact__radio">
                 <input
                   class="c-radio__button"
-                  id="type"
+                  id="type4"
                   type="radio"
+                  name="inquiryType"
                   value=""
-                />
-                <label class="c-radio__label">プレス・取材について</label>
+                >
+                <label class="c-radio__label" for="type4">プレス・取材について</label>
               </div>
             </div>
             <div class="c-contact__radiogroupitems">
               <div class="c-contact__radio u-mt0">
                 <input
                   class="c-radio__button"
-                  id="type"
+                  id="type5"
                   type="radio"
+                  name="inquiryType"
                   value=""
-                />
-                <label class="c-radio__label">タクシーについて</label>
+                >
+                <label class="c-radio__label" for="type5">タクシーについて</label>
               </div>
               <div class="c-contact__radio">
                 <input
                   class="c-radio__button"
-                  id="type"
+                  id="type6"
                   type="radio"
+                  name="inquiryType"
                   value=""
-                />
-                <label class="c-radio__label">コドライバー派遣について</label>
+                >
+                <label class="c-radio__label" for="type6">コドライバー派遣について</label>
               </div>
               <div class="c-contact__radio">
                 <input
                   class="c-radio__button"
-                  id="type"
+                  id="type7"
                   type="radio"
+                  name="inquiryType"
                   value=""
-                />
-                <label class="c-radio__label">採用について</label>
+                >
+                <label class="c-radio__label" for="type7">採用について</label>
               </div>
               <div class="c-contact__radio">
                 <input
                   class="c-radio__button"
-                  id="type"
+                  id="type8"
                   type="radio"
+                  name="inquiryType"
                   value=""
-                />
-                <label class="c-radio__label">その他</label>
+                >
+                <label class="c-radio__label" for="type8">その他</label>
               </div>
             </div>
           </div>
@@ -101,7 +109,7 @@
               name="name"
               type="text"
               value=""
-            />
+            >
           </div>
         </div>
         <div class="c-contact__formrow">
@@ -116,7 +124,7 @@
               name="furigana"
               type="text"
               value=""
-            />
+            >
           </div>
         </div>
         <div class="c-contact__formrow">
@@ -132,11 +140,14 @@
                   >〒</label
                 >
                 <input
-                  class="c-contact__inputtext c-contact__inputtextadjust"
+                  class="c-contact__inputtext"
                   id="postal"
                   type="text"
+                  name="postal"
+                  size="8" 
+                  maxlength="8"
                   value=""
-                />
+                >
               </div>
               <div
                 class="c-contact__input c-contact__inputadjust c-contact__postal"
@@ -144,9 +155,10 @@
                 <input
                   class="c-contact__inputtext"
                   id="postal2"
+                  name="postal2"
                   type="text"
                   value=""
-                />
+                >
               </div>
             </div>
           </div>
@@ -163,15 +175,15 @@
               name="address"
               type="text"
               value=""
-            />
+            >
           </div>
         </div>
         <div class="c-contact__formrow">
           <div class="c-contact__label">
-            <label class="c-contact__labelname" for="phone1">お電話番号</label>
+            <label class="c-contact__labelname" for="phone">お電話番号</label>
             <label class="c-contact__labelstatus u-required">必須</label>
           </div>
-          <div class="c-contact__inputaddress">
+          <div class="c-contact__inputphone">
             <div class="c-contact__inputgroup">
               <div
                 class="c-contact__input c-contact__inputadjust c-contact__phone"
@@ -179,9 +191,10 @@
                 <input
                   class="c-contact__inputtext"
                   id="phone1"
+                  name="phone1"
                   type="text"
                   value=""
-                />
+                >
               </div>
               <div
                 class="c-contact__input c-contact__inputadjust c-contact__phone"
@@ -190,8 +203,9 @@
                   class="c-contact__inputtext"
                   id="phone2"
                   type="text"
+                  name="phone2"
                   value=""
-                />
+                >
               </div>
               <div
                 class="c-contact__input c-contact__inputadjust c-contact__phone"
@@ -200,15 +214,16 @@
                   class="c-contact__inputtext"
                   id="phone3"
                   type="text"
+                  name="phone3"
                   value=""
-                />
+                >
               </div>
             </div>
           </div>
         </div>
         <div class="c-contact__formrow">
           <div class="c-contact__label">
-            <label class="c-contact__labelname" for="email1"
+            <label class="c-contact__labelname" for="email"
               >メールアドレス</label
             >
             <label class="c-contact__labelstatus u-required">必須</label>
@@ -216,16 +231,16 @@
           <div class="c-contact__input">
             <input
               class="c-contact__inputtext"
-              id="email1"
+              id="email"
               name="email"
               type="text"
               value=""
-            />
+            >
           </div>
         </div>
         <div class="c-contact__formrow">
           <div class="c-contact__label">
-            <label class="c-contact__labelname" for="email2"
+            <label class="c-contact__labelname" for="email-confirm"
               >メールアドレス</label
             >
             <label class="c-contact__labelstatus u-required">確認用</label>
@@ -233,11 +248,11 @@
           <div class="c-contact__input">
             <input
               class="c-contact__inputtext"
-              id="email2"
-              name="email"
+              id="email-confirm"
+              name="email-confirm"
               type="text"
               value=""
-            />
+            >
           </div>
         </div>
         <div class="c-contact__formrow">

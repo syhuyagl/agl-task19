@@ -136,12 +136,11 @@ footer
     }
     @include sp {
       font-size: 1.5rem;
-      width: 59.9%;
       margin: 13px auto 0;
-      padding: 19px 51px 17px 52px;
+      padding: 20px 81px 17px 51px;
       letter-spacing: -0.2px;
       &::after {
-        right: 19%;
+        right: 18.7%;
         top: 32.7%;
       }
     }
@@ -229,7 +228,7 @@ footer
     width: 25%;
   }
   .c-footer__labelbot {
-    letter-spacing: 1px;
+    letter-spacing: 0.2px;
   }
   .c-footer__telnfax {
     @include sp {

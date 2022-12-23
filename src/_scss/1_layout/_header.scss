@@ -1,5 +1,13 @@
 /* Header
 ------------------------------------------------------------*/
+@font-face {
+  font-family: "HiraginoMincho";
+  src: url("../../assets/fonts/HiraginoMinchoPro.otf");
+}
+@font-face {
+  font-family: "SoukouMincho";
+  src: url("../../assets/fonts/SoukouMincho.ttf");
+}
 .c-header {
   @include tab {
     position: fixed;
@@ -150,6 +158,155 @@
   }
   .c-header__overlay--active {
     transform: translateX(0);
+  }
+  .c-header__overlayitems {
+    font-size: 1.5rem;
+    font-weight: 500;
+  }
+  .c-header__overlayitem {
+    border-bottom: 1px solid #fff;
+    line-height: 1.53;
+    letter-spacing: -0.2px;
+    a {
+      padding: 13px 20px 11px;
+      display: block;
+    }
+    &:first-child {
+      border-top: 1px solid #fff;
+    }
+    &:last-child {
+      border-bottom: none;
+    }
+    border-bottom: 1px solid #fff;
+  }
+  .c-header__banner {
+    position: relative;
+  }
+  .c-header__slide {
+    height: 538px;
+    width: 100%;
+    background-size: cover;
+    background-position: center;
+    @include sp {
+      height: 215px;
+    }
+  }
+
+  .c-header__heading {
+    background-position: center;
+    background-size: cover;
+    height: 60px;
+    width: 614px;
+    margin: 179px auto 50px;
+    transform: translateX(10px);
+    background-image: url("../../assets/img/mv1-text.png");
+
+    h1 {
+      text-indent: -9999px;
+    }
+    @include sp {
+      height: 25px;
+      margin: -2px auto 22px;
+      width: 249px;
+      transform: translateX(0px);
+    }
+  }
+
+  .c-header__title {
+    color: #fff;
+    font-size: 2rem;
+    font-weight: 500;
+    text-align: center;
+    text-shadow: 0 0 5px rgba($color: #000, $alpha: 0.9);
+    padding-left: 26px;
+    letter-spacing: -1.1px;
+    @include sp {
+      font-size: 1.3rem;
+      line-height: 1.5;
+      padding-left: 27px;
+      letter-spacing: -0.6px;
+      transform: translateX(-11px);
+    }
+  }
+
+  .c-header__subtitle {
+    position: absolute;
+    left: 49.7%;
+    transform: translateX(-50%);
+    top: 46.5%;
+    letter-spacing: -1.8px;
+    @include sp {
+      letter-spacing: -0.6px;
+      padding-left: 0;
+    }
+  }
+
+  .c-header__slide1 {
+    background-image: url("../../assets/img/mv1.jpg");
+    @include sp {
+      background-image: url("../../assets/img/mv1-sp.jpg");
+    }
+  }
+  .c-header__mainslidetext {
+    position: absolute;
+    top: 26.2%;
+  }
+  .c-nav__banner {
+    background: #fff;
+    padding: 11px 0;
+  }
+  .c-header__bannertext {
+    width: fit-content;
+    margin: 27px auto;
+    background: #fff;
+    color: $black;
+    text-align: center;
+    border: 2px solid rgb(130, 20, 26);
+    @include sp {
+      padding-top: 8px;
+      margin: 10px auto;
+      line-height: 1.56;
+    }
+  }
+  .c-header__tel {
+    font-family: SoukouMincho, serif;
+    font-size: 3rem;
+    text-align: center;
+    @include sp {
+      font-size: 2rem;
+    }
+  }
+  .c-header__teldes {
+    font-size: 1.6rem;
+    font-weight: 500;
+    padding: 0 18px 10px;
+    @include sp {
+      font-size: 1.3rem;
+      padding: 3px 44px 8px;
+      letter-spacing: -1.3px;
+    }
+  }
+  .c-header__tellabel {
+    font-weight: 500;
+    font-family: YuGothic;
+    font-size: 1.4rem;
+    text-align: center;
+    @include sp {
+      font-size: 1.6rem;
+    }
+  }
+  .c-header__teltitle {
+    font-size: 2rem;
+    color: $black;
+    font-weight: 500;
+    text-align: center;
+    @include sp {
+      font-size: 1.6rem;
+      letter-spacing: -1.3px;
+      max-width: 293px;
+      margin: 0 auto;
+      line-height: 1.3;
+    }
   }
 }
 /* Main menu

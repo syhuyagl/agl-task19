@@ -32,10 +32,10 @@
                         </div>
                         <div class="c-intro__guideitems">
                             <% item.guide && item.guide.forEach((guideItem,index) => { %>
-                                <div class="c-intro__guideitem">
+                                <a href="#" class="c-intro__guideitem">
                                     <img class="c-intro__guideimg" src="<%=guideItem.img%>" alt="<%=guideItem.title%>">
                                     <span class="c-intro__guidetext"><%=guideItem.title%></span>
-                                </div>
+                                </a>
                             <% }) %>
                         </div>
                     </div> 
@@ -76,10 +76,10 @@
                             </div>
                             <div class="c-intro__guideitems">
                                 <% item.guide && item.guide.forEach((guideItem,index) => { %>
-                                    <div class="c-intro__guideitem">
+                                    <a href="#" class="c-intro__guideitem">
                                         <img class="c-intro__guideimg" src="<%=guideItem.imgSp%>" alt="<%=guideItem.title%>">
                                         <span class="c-intro__guidetext"><%=guideItem.title%></span>
-                                    </div>
+                                    </a>
                                 <% }) %>
                             </div>
                         </div> 
