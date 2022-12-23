@@ -70,17 +70,29 @@ $(document).ready(function () {
     rules: {
       phone1:{
         required: true,
+        minLength: 2,
+        maxLength: 2,
+        digit: true
       },
       phone2:{
         required: true,
+        minLength: 4,
+        maxLength: 4,
+        digit: true
       },
       phone3:{
         required: true,
+        minLength: 4,
+        maxLength: 4,
+        digit: true
       },
       address:{
         required: true,
       },
       name: {
+        required: true,
+      },
+      furigana:{
         required: true,
       },
       email: {
@@ -103,6 +115,7 @@ $(document).ready(function () {
       name: "お名前を入力してください。",
       email: "有効なメールアドレスを入力してください。",
       content: "内容を入力してください。",
+      furigana: "この項目は必須です。",
       address: "住所を入力してください。",
       inquiryType: "質問の種類を選択してください。",
       phone1: "電話番号を入力してください。",
