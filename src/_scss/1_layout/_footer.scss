@@ -54,6 +54,7 @@ footer
     @include tab {
       flex-direction: column;
       width: 50%;
+      text-align: center;
     }
     @include sp {
       width: 100%;

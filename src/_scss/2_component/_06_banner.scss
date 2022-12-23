@@ -1,0 +1,42 @@
+/*------------------------------------------------------------
+navi
+------------------------------------------------------------*/
+
+/*
+------------------------------------------------------------*/
+.c-banner {
+  --url: url("../../assets/img/contact-banner.jpg");
+  .c-banner__bg {
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-image: var(--url);
+    height: 429px;
+    color: #fff;
+    text-align: center;
+    position: relative;
+  }
+  .c-banner__content {
+    position: absolute;
+    width: 100%;
+    top: 50%;
+    transform: translateY(-50%);
+    line-height: 1.7;
+    letter-spacing: 2.1px;
+  }
+  .c-banner__titleen {
+    font-size: 2rem;
+    font-weight: 400;
+    font-family: "Open Sans", sans-serif;
+    border: 1px solid #fff;
+    width: fit-content;
+    margin: 0 auto;
+    padding: 7px 33px;
+  }
+  .c-banner__titlejp {
+    font-family: HiraginoMincho, serif;
+    font-size: 3.6rem;
+    transform: translateY(13px);
+    letter-spacing: 3px;
+  }
+}

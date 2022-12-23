@@ -59,6 +59,15 @@ body {
     display: none;
   }
 }
+.is-pcntabfax {
+  display: inline-block;
+  @include tab {
+    display: inline-block;
+  }
+  @include sp {
+    display: none;
+  }
+}
 .is-tab {
   display: none;
   @include tab {

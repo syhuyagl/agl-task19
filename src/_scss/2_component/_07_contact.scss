@@ -1,0 +1,222 @@
+/*------------------------------------------------------------
+text
+------------------------------------------------------------*/
+
+/*
+------------------------------------------------------------*/
+.c-contact {
+  .c-contact__heading {
+    font-size: 2.4rem;
+    color: $black;
+    font-weight: 500;
+    letter-spacing: 0.2px;
+    margin-top: 80px;
+    border-left: 3px solid #fcd000;
+    letter-spacing: 0.1px;
+    padding: 5px 0 5px 17px;
+    position: relative;
+    &::after {
+      content: "";
+      position: absolute;
+      width: 76.1%;
+      height: 1px;
+      right: 0;
+      top: 47%;
+      background: #000;
+    }
+    @include sp {
+      padding-top: 6px;
+    }
+  }
+  .c-contact__form {
+    margin: 39px auto 0;
+    padding: 0 44px;
+  }
+  .c-contact__label {
+    display: flex;
+    width: 29%;
+    padding-top: 3px;
+    align-items: center;
+    @include sp {
+      width: 60%;
+    }
+  }
+  .c-contact__formrow {
+    display: flex;
+    margin-top: 37px;
+    &:first-child {
+      margin-top: 0;
+    }
+    &:nth-child(3) {
+      .c-contact__inputtext {
+        padding: 8px 0 9px 6px;
+        font-family: inherit;
+      }
+    }
+    @include sp {
+      flex-direction: column;
+    }
+  }
+  .c-contact__labelstatus {
+    font-size: 1.2rem;
+    font-weight: 500;
+    padding: 2px 14px 2px 15px;
+    height: 20px;
+    width: fit-content;
+    background: #a1a1a1;
+    color: #fff;
+    letter-spacing: 1px;
+    border-radius: 5px;
+    margin-left: 15px;
+    @include sp {
+      width: 42px;
+    }
+  }
+  .c-contact__labelname {
+    font-weight: 500;
+    font-size: 1.5rem;
+    padding-top: 2px;
+    padding-left: 9px;
+    color: $black;
+    letter-spacing: 0.2px;
+  }
+  .c-contact__input {
+    width: 71%;
+    @include sp {
+      margin-top: 13px;
+      width: 100%;
+    }
+  }
+  .c-contact__inputtext {
+    padding: 10px 0 9px 8px;
+    width: 96.3%;
+    border-width: 1px;
+    border-style: solid;
+    border-color: #cccccc;
+    font-family: inherit;
+    font-size: 1.2rem;
+
+    &::placeholder {
+      font-weight: 300;
+      color: #cccccc;
+      letter-spacing: 1.6px;
+    }
+    &:focus {
+      border-color: rgb(166, 138, 42);
+    }
+  }
+  .c-contact__inputgroup {
+    display: flex;
+  }
+  .c-contact__inputadjust {
+    width: 30.4%;
+    display: flex;
+    @include sp {
+      width: 35.4%;
+    }
+  }
+  .c-contact__labelnameadjust {
+    font-weight: 300;
+    font-size: 1.4rem;
+    padding-top: 6px;
+    letter-spacing: 1px;
+    padding-left: 0px;
+    transform: translateX(-3px);
+  }
+  .c-contact__inputaddress {
+    width: 71.4%;
+    @include sp {
+      width: 100%;
+    }
+  }
+  .c-contact__inputtextadjust {
+    margin-left: 6px;
+  }
+  .c-contact__selectgroup {
+    width: 66.8%;
+    padding-left: 4.9%;
+    @include sp {
+      margin-top: 13px;
+    }
+  }
+  .c-contact__select {
+    width: 52%;
+    padding: 11px 0px 8px 8px;
+    border-width: 1px;
+    border-style: solid;
+    border-color: #cccccc;
+    font-size: 1.2rem;
+    font-weight: 300;
+    color: #cccccc;
+    letter-spacing: 1.8px;
+    appearance: none;
+    background-image: linear-gradient(45deg, transparent 50%, #a1a1a1 50%),
+      linear-gradient(135deg, #a1a1a1 50%, transparent 50%);
+    background-position: calc(100% - 14px) calc(1em + 2px),
+      calc(100% - 9px) calc(1em + 2px), calc(100% - 2.5em) 0.5em;
+    background-size: 7px 6px, 5px 7px, 1px 1.5em;
+    background-repeat: no-repeat;
+    &:focus {
+      background-image: linear-gradient(45deg, #a1a1a1 50%, transparent 50%),
+        linear-gradient(135deg, transparent 50%, #a1a1a1 50%);
+      background-position: calc(100% - 8px) 1em, calc(100% - 15px) 1em,
+        calc(100% - 2.5em) 0.5em;
+      background-size: 7px 6px, 5px 6px, 1px 1.5em;
+      background-repeat: no-repeat;
+    }
+    &::placeholder {
+      font-size: 1.2rem;
+      font-weight: 300;
+      color: #cccccc;
+      letter-spacing: 1.8px;
+      font-family: $main-fonts;
+    }
+    option {
+      font-size: 1.2rem;
+      font-weight: 300;
+      color: #cccccc;
+      letter-spacing: 1.8px;
+    }
+    @include sp {
+      width: 62%;
+    }
+  }
+
+  .c-contact__inputtextarea {
+    padding: 10px 0 5px 8px;
+    resize: none;
+  }
+  .c-contact__customlabel {
+    max-width: 118px;
+    line-height: 1.9;
+    padding-top: 0px;
+    @include sp {
+      max-width: 150px;
+      letter-spacing: -0.3px;
+    }
+  }
+  .c-contact__formsubmit {
+    background-color: #48b7d0;
+    border: none;
+    font-size: 1.6rem;
+    font-weight: 600;
+    color: #fff;
+    display: flex;
+    margin: 56px auto 0;
+    padding: 8px 92px;
+    letter-spacing: 1.3px;
+    position: relative;
+    z-index: 100;
+    cursor: pointer;
+    font-family: inherit;
+    transition: 0.4s;
+    &:hover {
+      opacity: 0.7;
+    }
+  }
+  .error {
+    color: #e74c3c;
+    font-size: 1.2rem;
+    font-weight: 300;
+  }
+}
