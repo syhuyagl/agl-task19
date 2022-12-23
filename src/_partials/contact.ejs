@@ -138,7 +138,9 @@
                   value=""
                 />
               </div>
-              <div class="c-contact__input c-contact__inputadjust">
+              <div
+                class="c-contact__input c-contact__inputadjust c-contact__postal"
+              >
                 <input
                   class="c-contact__inputtext"
                   id="postal2"
@@ -167,10 +169,13 @@
         <div class="c-contact__formrow">
           <div class="c-contact__label">
             <label class="c-contact__labelname" for="phone1">お電話番号</label>
+            <label class="c-contact__labelstatus u-required">必須</label>
           </div>
           <div class="c-contact__inputaddress">
             <div class="c-contact__inputgroup">
-              <div class="c-contact__input c-contact__inputadjust">
+              <div
+                class="c-contact__input c-contact__inputadjust c-contact__phone"
+              >
                 <input
                   class="c-contact__inputtext"
                   id="phone1"
@@ -178,7 +183,9 @@
                   value=""
                 />
               </div>
-              <div class="c-contact__input c-contact__inputadjust">
+              <div
+                class="c-contact__input c-contact__inputadjust c-contact__phone"
+              >
                 <input
                   class="c-contact__inputtext"
                   id="phone2"
@@ -186,7 +193,9 @@
                   value=""
                 />
               </div>
-              <div class="c-contact__input c-contact__inputadjust">
+              <div
+                class="c-contact__input c-contact__inputadjust c-contact__phone"
+              >
                 <input
                   class="c-contact__inputtext"
                   id="phone3"
@@ -219,7 +228,7 @@
             <label class="c-contact__labelname" for="email2"
               >メールアドレス</label
             >
-            <label class="c-contact__labelstatus u-required">必須</label>
+            <label class="c-contact__labelstatus u-required">確認用</label>
           </div>
           <div class="c-contact__input">
             <input
@@ -238,20 +247,45 @@
               for="content"
               >お問い合わせ内容</label
             >
-            <label class="c-contact__labelstatus u-required">確認用</label>
           </div>
           <div class="c-contact__input">
             <textarea
               class="c-contact__inputtext c-contact__inputtextarea"
               id="content"
               name="content"
-              rows="13"
+              rows="12"
               cols="33"
             ></textarea>
           </div>
         </div>
-        <button class="c-contact__formsubmit" type="submit">確認する ></button>
+        <button class="c-contact__formsubmit" type="submit">
+          送信内容を確認する
+        </button>
       </form>
+    </div>
+    <div class="c-contact__footer">
+      <div class="l-container--1000">
+        <p class="c-contact__footertitle">
+          お問い合わせで、数時間たってもメールの返信がない場合、またはお急ぎの場合は、直接お電話下さいますようお願い申し上げます。
+        </p>
+        <p class="c-contact__phonelisttitle">【お問い合わせの電話連絡先】</p>
+        <ul class="c-contact__phonelist">
+            <% if (typeof phoneList != 'undefined') { %>
+                <% phoneList.items && phoneList.items.forEach((item) => { %>
+                    <li class="c-contact__phoneitem">
+                        <span class="c-contact__phonelabel"><%= item.name %></span>
+                        <a class="c-contact__phonenumber" href="tel:"><%= item.number %></a>
+                      </li>
+                <% }) %>
+            <% } %>
+        </ul>
+        <p class="c-contact__note">
+          当社はお客さまの個人情報について細心の注意を払って取り扱います。
+        </p>
+        <p class="c-contact__note">
+          詳しくは、当社の <a class="c-contact__notelink" href="#">プライバシーポリシー</a> をご覧ください。
+        </p>
+      </div>
     </div>
   </div>
 </section>
