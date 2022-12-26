@@ -15,9 +15,10 @@ form
   }
   .c-company__banner {
     display: flex;
-    border-top: 1px solid $black;
-    border-bottom: 1px solid $black;
+    border-top: 1px solid #000;
+    border-bottom: 1px solid #000;
     height: 422px;
+    margin-right: 10px;
     @include tab {
       flex-direction: column-reverse;
       height: auto;
@@ -29,7 +30,7 @@ form
     }
   }
   .c-company__bg {
-    width: 50%;
+    width: 50.2%;
     background-image: url("../../assets/img/company.jpg");
     background-position: center;
     background-size: cover;
@@ -44,9 +45,9 @@ form
     }
   }
   .c-company__info {
-    width: 50%;
+    width: 49.8%;
     padding-top: 47px;
-    padding-left: 43px;
+    padding-left: 45px;
     display: flex;
     justify-content: space-between;
     flex-direction: column;
@@ -117,6 +118,17 @@ form
       position: absolute;
       right: 33%;
       top: 27.4%;
+    }
+    @include tab {
+      width: auto;
+      padding: 7px 48px 3px 18px;
+      margin-top: 400px;
+      letter-spacing: 1px;
+      text-align: center;
+      &::after {
+        right: 25.3%;
+        top: 17.7%;
+      }
     }
     @include sp {
       width: auto;
