@@ -24,7 +24,7 @@
     background: rgba(255, 255, 255, 1);
     margin: 0 auto;
     @include sp {
-      padding: 7px 0;
+      padding: 10px 0;
     }
   }
 
@@ -35,7 +35,7 @@
     }
     @include sp {
       width: 60.1%;
-      transform: translateY(4px);
+     
     }
   }
 
@@ -55,27 +55,33 @@
   }
 
   .c-header__topitem {
-    padding: 6px 3px;
+    padding: 7px 3px 5px;
     margin: 0 auto;
     text-align: right;
     letter-spacing: -0.9px;
   }
 
   .c-header__news {
-    margin-right: 33px;
+    margin-right: 40px;
     position: relative;
-
+    letter-spacing: -1.5px;
     &::after {
       position: absolute;
       content: "";
       height: 10px;
       width: 1px;
-      right: -18px;
-      top: 3px;
+      right: -21px;
+      top: 4px;
       background-color: #fff;
     }
   }
+  .c-header__faq{
+   
+    transform: translate(-4px, 0px);
+    display: inline-block;
+    letter-spacing: -0.9px;
 
+  }
   .c-gnav {
     display: flex;
     color: #000;
@@ -128,6 +134,7 @@
     width: 39px;
     @include sp {
       width: 35px;
+     
     }
   }
   .c-header__icon {
@@ -201,7 +208,7 @@
     transform: translateX(10px);
     background-image: url("../../assets/img/mv1-text.png");
 
-    h1 {
+    p {
       text-indent: -9999px;
     }
     @include sp {

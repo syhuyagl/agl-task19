@@ -46,7 +46,6 @@ text
   .c-contact__label {
     display: flex;
     width: 29%;
-    align-items: center;
     @include tab {
       width: 32%;
     }
@@ -137,10 +136,22 @@ text
       .c-contact__label {
         align-items: flex-start;
       }
+      .c-contact__labelstatus {
+        transform: translateY(1px);
+      }
     }
     &:nth-last-child(2) {
       .c-contact__label {
         align-items: flex-start;
+      }
+    }
+    &:not(:first-child) {
+      .c-contact__label {
+        transform: translateY(4px);
+      }
+      .c-contact__labelstatus {
+        transform: translateY(2px);
+        margin-left: 13px;
       }
     }
     &:nth-child(3) {
@@ -331,6 +342,7 @@ text
     transform: translateX(-9px);
     margin-top: 35px;
     letter-spacing: 1px;
+    font-size: 700;
     @include sp {
       text-align: center;
       transform: translateX(0px);
@@ -385,8 +397,7 @@ text
     bottom: -20%;
     left: 0;
     @include sp {
-    bottom: -10%;
-
+      bottom: -10%;
     }
   }
 

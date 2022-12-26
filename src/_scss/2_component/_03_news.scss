@@ -32,6 +32,8 @@ icon
     font-family: HiraginoMinchoW3;
     font-size: 1.5rem;
     letter-spacing: -2.1px;
+    font-weight: 300;
+    padding-top: 2px;
     @include sp {
       letter-spacing: -2.5px;
       line-height: 1.6;
@@ -41,7 +43,7 @@ icon
   }
 
   .c-news__items {
-    margin-top: 65px;
+    margin-top: 63px;
     @include tab {
       margin-top: 32px;
     }
@@ -222,7 +224,7 @@ icon
     }
     @include sp {
       margin-top: 0px;
-      margin-left: -3px;
+      margin-left: -2px;
     }
   }
 }

@@ -69,7 +69,7 @@ title
   }
 
   .c-intro__tabtitle {
-    letter-spacing: -0.9px;
+    letter-spacing: -1.3px;
     font-size: 2.2rem;
     font-family: HiraginoMincho, serif;
     font-weight: 600;
@@ -160,7 +160,7 @@ title
     color: $black;
     font-weight: 500;
     line-height: 1.74;
-    padding-top: 34px;
+    padding-top: 31px;
     letter-spacing: -1.5px;
     max-width: 432px;
     @include tab {
@@ -173,7 +173,7 @@ title
       max-width: 276px;
       padding-bottom: 12px;
       letter-spacing: -1.6px;
-      line-height: 1.25;
+      line-height: 1.25;    
     }
   }
   .c-intro__contentsp {
@@ -233,7 +233,7 @@ title
   }
   .c-intro__button {
     background: $yellow;
-    padding: 14px 76px 13px 55px;
+    padding: 13px 76px 13px 53px;
     display: block;
     font-size: 1.5rem;
     color: $black;

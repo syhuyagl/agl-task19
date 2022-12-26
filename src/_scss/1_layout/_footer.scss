@@ -39,6 +39,7 @@ footer
     font-size: 2.8rem;
     font-family: HiraginoMincho, serif;
     color: #fff;
+    font-weight: 600;
     text-shadow: 0px 0px 16px rgba(0, 0, 0, 0.92);
     text-align: center;
     @include sp {
@@ -63,7 +64,7 @@ footer
     }
   }
   .c-footer__tel {
-    padding: 14px 54px 2px;
+    padding: 12px 54px 4px 56px;
     background: #000;
     opacity: 0.7;
     border: 1px solid #fff;
@@ -113,7 +114,7 @@ footer
     }
   }
   .c-footer__bannerlink {
-    padding: 25px 87px 2px 49px;
+    padding: 25px 90px 4px 49px;
     font-size: 2rem;
     background: #82141a;
     letter-spacing: 1.3px;
@@ -162,10 +163,10 @@ footer
     font-size: 1.5rem;
     font-weight: 500;
     color: $black;
-    padding-top: 3px;
-    padding-left: 69px;
-    line-height: 1.93;
-    letter-spacing: -0.2px;
+    padding-top: 0px;
+    padding-left: 70px;
+    line-height: 2.06;
+    letter-spacing: -0.1px;
     @include tab {
       padding-left: 0;
       text-align: center;
@@ -180,7 +181,7 @@ footer
     color: $black;
     font-size: 1.5rem;
     margin-top: 40px;
-    padding-top: 45px;
+    padding-top: 44px;
     padding-bottom: 44px;
     border-top: 1px solid #ccc;
   }
@@ -198,17 +199,19 @@ footer
       font-family: "Font Awesome 5 Free";
       position: absolute;
       left: -0.1%;
-      top: 6.4%;
+      top: 50%;
+      transform: translateY(-50%);
     }
     &:not(:first-child) {
-      padding-top: 7px;
+      margin-top: 7px;
       &::after {
         content: "\f105";
         font-weight: 900;
         font-family: "Font Awesome 5 Free";
         position: absolute;
         left: -0.1%;
-        top: 20.4%;
+        top: 50%;
+        transform: translateY(-54%);
       }
     }
   }
