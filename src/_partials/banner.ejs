@@ -1,14 +1,14 @@
 <section class="c-banner">
-  <div class="c-banner__bg">
+  <div class="c-banner__bg<%= (title == "FAQ" ? " c-banner__faq" : "") %>">
     <div class="c-banner__content">
-      <h2 class="c-banner__titleen">Contact Us</h2>
-      <h1 class="c-banner__titlejp">お問い合わせ</h1>
+      <h2 class="c-banner__titleen"><%= (typeof title != "undefined" ? title : "Page title") %></h2>
+      <h1 class="c-banner__titlejp"><%= (typeof titlejp != "undefined" ? titlejp : "Page title") %></h1>
     </div>
   </div>
   <div class="c-breadcrumb">
     <div class="l-container">
         <span class="c-breadcrumb__firstnode">HOME</span>
-        <span class="c-breadcrumb__secondnode">お問い合わせ</span>
+        <span class="c-breadcrumb__secondnode"><%= (typeof titlejp != "undefined" ? titlejp : "Page title") %></span>
     </div>
   </div>
 </section>

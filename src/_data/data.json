@@ -88,7 +88,7 @@
         "des2": "単なる移動ではなく、「時間」「空間」「サービス」をご提供いたします",
         "btn": "ハイヤーサービスの特徴を見る",
         "tabTitle": "ハイヤーサービス",
-        "tabSubtitle": "（高級車を専属利用）プロとしての責任感と上質なサービス", 
+        "tabSubtitle": "（高級車を専属利用）プロとしての責任感と上質なサービス",
         "guide": [
           {
             "img": "./assets/img/guide-5.jpg",
@@ -204,27 +204,251 @@
       }
     ]
   },
-  "phoneList":{
-    "items":[
+  "phoneList": {
+    "items": [
       {
         "name": "タクシー関連：本社 無線部",
-        "number":"06-6452-0055"
+        "number": "06-6452-0055"
       },
       {
         "name": "ハイヤー関連：本社 法人営業部",
-        "number":"06-6458-7088"
+        "number": "06-6458-7088"
       },
       {
         "name": "採用関連：本社 人事部",
-        "number":"06-6458-5314"
+        "number": "06-6458-5314"
       },
       {
         "name": "お忘れ物：福島営業所 営業部",
-        "number":"06-6458-5410"
+        "number": "06-6458-5410"
       },
       {
         "name": "上記以外：本社 代表",
-        "number":"06-6458-5471"
+        "number": "06-6458-5471"
+      }
+    ]
+  },
+  "faq": {
+    "items": [
+      {
+        "title": "タクシーの利用について",
+        "faqs": [
+          {
+            "question": "",
+            "answer": ""
+          },
+          {
+            "question": "",
+            "answer": ""
+          },
+          {
+            "question": "",
+            "answer": ""
+          },
+          {
+            "question": "",
+            "answer": ""
+          },
+          {
+            "question": "",
+            "answer": ""
+          },
+          {
+            "question": "",
+            "answer": ""
+          },
+          {
+            "question": "",
+            "answer": ""
+          },
+          {
+            "question": "",
+            "answer": ""
+          },
+          {
+            "question": "",
+            "answer": ""
+          },
+          {
+            "question": "",
+            "answer": ""
+          }
+        ]
+      },
+      {
+        "title": "配車に関すること",
+        "faqs": [
+          {
+            "question": "",
+            "answer": ""
+          },
+          {
+            "question": "",
+            "answer": ""
+          },
+          {
+            "question": "",
+            "answer": ""
+          },
+          {
+            "question": "",
+            "answer": ""
+          },
+          {
+            "question": "",
+            "answer": ""
+          },
+          {
+            "question": "",
+            "answer": ""
+          },
+          {
+            "question": "",
+            "answer": ""
+          },
+          {
+            "question": "",
+            "answer": ""
+          },
+          {
+            "question": "",
+            "answer": ""
+          },
+          {
+            "question": "",
+            "answer": ""
+          }
+        ]
+      },
+      {
+        "title": "料金に関すること",
+        "faqs": [
+          {
+            "question": "",
+            "answer": ""
+          },
+          {
+            "question": "",
+            "answer": ""
+          },
+          {
+            "question": "",
+            "answer": ""
+          },
+          {
+            "question": "",
+            "answer": ""
+          },
+          {
+            "question": "",
+            "answer": ""
+          }
+        ]
+      },
+      {
+        "title": "予約について",
+        "faqs": [
+          {
+            "question": "",
+            "answer": ""
+          },
+          {
+            "question": "",
+            "answer": ""
+          },
+          {
+            "question": "",
+            "answer": ""
+          },
+          {
+            "question": "",
+            "answer": ""
+          }
+        ]
+      },
+      {
+        "title": "福祉について",
+        "faqs": [
+          {
+            "question": "",
+            "answer": ""
+          },
+          {
+            "question": "",
+            "answer": ""
+          },
+          {
+            "question": "",
+            "answer": ""
+          },
+          {
+            "question": "",
+            "answer": ""
+          }
+        ]
+      },
+      {
+        "title": "車両に関すること",
+        "faqs": [
+          {
+            "question": "",
+            "answer": ""
+          },
+          {
+            "question": "",
+            "answer": ""
+          },
+          {
+            "question": "",
+            "answer": ""
+          },
+          {
+            "question": "",
+            "answer": ""
+          }
+        ]
+      },
+      {
+        "title": "忘れ物について",
+        "faqs": [
+          {
+            "question": "",
+            "answer": ""
+          },
+          {
+            "question": "",
+            "answer": ""
+          },
+          {
+            "question": "",
+            "answer": ""
+          },
+          {
+            "question": "",
+            "answer": ""
+          },
+          {
+            "question": "",
+            "answer": ""
+          },
+          {
+            "question": "",
+            "answer": ""
+          }
+        ]
+      },
+      {
+        "title": "その他",
+        "faqs": [
+          {
+            "question": "",
+            "answer": ""
+          },
+          {
+            "question": "",
+            "answer": ""
+          }
+        ]
       }
     ]
   }
