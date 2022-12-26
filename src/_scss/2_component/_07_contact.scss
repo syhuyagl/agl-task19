@@ -93,6 +93,7 @@ text
     justify-content: space-between;
     width: 51.2%;
     margin-left: 53px;
+    position: relative;
     @include tab {
       width: 62.2%;
     }
@@ -103,7 +104,6 @@ text
     }
   }
   .c-contact__radiogroupitems {
-    position: relative;
     &:nth-child(2) {
       @include sp {
         margin-top: 15px;
@@ -384,6 +384,10 @@ text
     position: absolute;
     bottom: -20%;
     left: 0;
+    @include sp {
+    bottom: -10%;
+
+    }
   }
 
   .c-contact__inputphone {

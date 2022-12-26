@@ -248,8 +248,14 @@
     }
   }
   .c-header__mainslidetext {
-    position: absolute;
-    top: 26.2%;
+    @include tab {
+      position: absolute;
+      top: 0;
+      width: 100%;
+    }
+    @include sp {
+      top: 26.2%;
+    }
   }
   .c-nav__banner {
     background: #fff;

@@ -417,15 +417,12 @@ title
     border-radius: 50%;
     display: inline-flex;
     align-self: center;
-    min-height: 96px;
     padding-top: 4px;
     @include tab {
       width: 19%;
-      min-height: initial;
       align-self: initial;
     }
     @include sp {
-      min-height: initial;
       width: 19.44%;
 
     }

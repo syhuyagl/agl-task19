@@ -192,7 +192,7 @@
                   class="c-contact__inputtext"
                   id="phone1"
                   name="phone1"
-                  type="text"
+                  type="tel"
                   minlength="2"
                   maxlength="2"
                   value=""
@@ -204,7 +204,7 @@
                 <input
                   class="c-contact__inputtext"
                   id="phone2"
-                  type="text"
+                  type="tel"
                   name="phone2"
                   minlength="4"
                   maxlength="4"
@@ -217,7 +217,7 @@
                 <input
                   class="c-contact__inputtext"
                   id="phone3"
-                  type="text"
+                  type="tel"
                   name="phone3"
                   minlength="4"
                   maxlength="4"
@@ -239,14 +239,14 @@
               class="c-contact__inputtext"
               id="email"
               name="email"
-              type="text"
+              type="email"
               value=""
             >
           </div>
         </div>
         <div class="c-contact__formrow">
           <div class="c-contact__label">
-            <label class="c-contact__labelname" for="email-confirm"
+            <label class="c-contact__labelname" for="emailConfirm"
               >メールアドレス</label
             >
             <label class="c-contact__labelstatus u-required">確認用</label>
@@ -255,8 +255,8 @@
             <input
               class="c-contact__inputtext"
               id="email-confirm"
-              name="email-confirm"
-              type="text"
+              name="emailConfirm"
+              type="email"
               value=""
             >
           </div>
@@ -295,7 +295,7 @@
                 <% phoneList.items && phoneList.items.forEach((item) => { %>
                     <li class="c-contact__phoneitem">
                         <span class="c-contact__phonelabel"><%= item.name %></span>
-                        <a class="c-contact__phonenumber" href="tel:"><%= item.number %></a>
+                        <a class="c-contact__phonenumber" href="tel: <%=item.number%>"><%= item.number %></a>
                       </li>
                 <% }) %>
             <% } %>

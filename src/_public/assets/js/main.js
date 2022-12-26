@@ -68,44 +68,40 @@ $(document).ready(function () {
       phone: "phone1 phone2 phone3",
     },
     rules: {
-      phone1:{
+      phone1: {
         required: true,
-        minLength: 2,
-        maxLength: 2,
-        digit: true
       },
-      phone2:{
+      phone2: {
         required: true,
-        minLength: 4,
-        maxLength: 4,
-        digit: true
       },
-      phone3:{
+      phone3: {
         required: true,
-        minLength: 4,
-        maxLength: 4,
-        digit: true
       },
-      address:{
+      address: {
         required: true,
       },
       name: {
         required: true,
       },
-      furigana:{
+      furigana: {
         required: true,
       },
       email: {
         required: true,
         email: true,
       },
+      emailConfirm: {
+        required: true,
+        email: true,
+        equalTo: '[name="email"]',
+      },
       inquiryType: {
         required: true,
       },
     },
-    errorPlacement: function(error, $element) {
+    errorPlacement: function (error, $element) {
       var name = $element.attr("name");
-      if (name === "phone1" || name === "phone2"|| name === "phone3") {
+      if (name === "phone1" || name === "phone2" || name === "phone3") {
         error.insertAfter("#phone1");
       } else {
         error.insertAfter($element);
@@ -113,18 +109,24 @@ $(document).ready(function () {
     },
     messages: {
       name: "お名前を入力してください。",
-      email: "有効なメールアドレスを入力してください。",
+      email: {
+        required: "有効なメールアドレスを入力してください。",
+        email: "正しいメール形式を入力してください",
+      },
       content: "内容を入力してください。",
       furigana: "この項目は必須です。",
       address: "住所を入力してください。",
       inquiryType: "質問の種類を選択してください。",
       phone1: "電話番号を入力してください。",
       phone2: "電話番号を入力してください。",
-      phone3: "電話番号を入力してください。"
+      phone3: "電話番号を入力してください。",
+      emailConfirm: {
+        required: "有効なメールアドレスを入力してください。",
+        email: "正しいメール形式を入力してください",
+        equalTo: "上記と同じメールアドレスを入力してください。",
+      },
     },
- 
   });
- 
   $("#postal").keyup(function () {
     AjaxZip3.zip2addr(this, "", "postal2", "postal2");
   });
