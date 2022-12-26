@@ -130,4 +130,12 @@ $(document).ready(function () {
   $("#postal").keyup(function () {
     AjaxZip3.zip2addr(this, "", "postal2", "postal2");
   });
+  $(".c-faq__question").click(function () {
+    var answer = $(this).next();
+    if (answer.hasClass("c-faq__answer--expand")) {
+      answer.removeClass("c-faq__answer--expand");
+    } else {
+      answer.addClass("c-faq__answer--expand");
+    }
+  });
 });

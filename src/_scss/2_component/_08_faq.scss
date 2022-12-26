@@ -4,6 +4,125 @@ list
 
 /*
 ------------------------------------------------------------*/
+@font-face {
+  font-family: "HiraginoMincho";
+  src: url("../../assets/fonts/HiraginoMinchoPro.otf");
+}
 .c-faq {
-	
+    --deg: 0;
+  .c-faq__navitems {
+    display: flex;
+    flex-wrap: wrap;
+    margin-top: 80px;
+  }
+  .c-faq__navitem {
+    padding: 17px 10px 17px 23px;
+    border: 1px solid #ccc;
+    font-size: 1.6rem;
+    font-weight: 500;
+    color: #222;
+    width: 31.5%;
+    text-align: center;
+    letter-spacing: -0.2px;
+    margin-bottom: 30px;
+    margin-right: 30px;
+    position: relative;
+    transition: 0.4s;
+    cursor: pointer;
+    &:hover {
+      opacity: 0.7;
+      transition: 0.4s;
+    }
+    &:nth-child(3n + 3) {
+      margin-right: 0;
+    }
+  }
+  .c-faq__navitemttitle {
+    position: relative;
+    &::before {
+      content: "\f105";
+      font-weight: 900;
+      font-family: "Font Awesome 5 Free";
+      position: absolute;
+      left: -14px;
+      top: 50%;
+      transform: translateY(-50%);
+    }
+  }
+  .c-faq__question {
+    padding: 26px 0;
+    position: relative;
+    border-bottom: 1px solid #ccc;
+    &::after {
+      content: "\f107";
+      font-weight: 900;
+      font-family: "Font Awesome 5 Free";
+      position: absolute;
+      right: 21px;
+      font-size: 1.9rem;
+      top: 50%;
+      transform: translateY(-40%) rotate(var(--deg));
+    }
+  }
+  .c-faq__questiontitle {
+    font-size: 2rem;
+    font-family: HiraginoMincho, serif;
+    font-weight: 600;
+    position: relative;
+    padding-left: 61px;
+    letter-spacing: -1.5px;
+    &::before {
+      content: "Q";
+      color: #fff;
+      background: #000;
+      padding: 3px 11px;
+      letter-spacing: 0px;
+      font-size: 2.4rem;
+      margin-left: 0px;
+      position: absolute;
+      top: -6px;
+      left: 0;
+    }
+  }
+  .c-faq__topicitems {
+    margin-top: 10px;
+  }
+  .c-faq__title {
+    font-size: 2.4rem;
+    font-family: HiraginoMincho, serif;
+    font-weight: 600;
+    color: #fff;
+    background-image: url("../../assets/img/faq-title.png");
+    padding: 18px 0 21px;
+    text-align: center;
+    letter-spacing: -1.2px;
+  }
+  .c-faq__answer {
+    margin-top: 8px;
+    border-bottom: 1px solid #ccc;
+    padding: 45px 0;
+    transition: 0.4s;
+    display: none;
+  }
+  .c-faq__answer--expand {
+    display: block;
+  }
+  .c-faq__answercontent {
+    font-size: 1.5rem;
+    padding-left: 61px;
+    position: relative;
+    letter-spacing: -1px;
+    &::before {
+      content: "A";
+      color: #fff;
+      background: $yellow;
+      padding: 2px 13px;
+      letter-spacing: -0.3px;
+      margin-left: 0px;
+      position: absolute;
+      top: -12px;
+      font-size: 2.4rem;
+      left: 0;
+    }
+  }
 }
