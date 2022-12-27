@@ -35,7 +35,6 @@
     }
     @include sp {
       width: 60.1%;
-     
     }
   }
 
@@ -75,12 +74,10 @@
       background-color: #fff;
     }
   }
-  .c-header__faq{
-   
+  .c-header__faq {
     transform: translate(-4px, 0px);
     display: inline-block;
     letter-spacing: -0.9px;
-
   }
   .c-gnav {
     display: flex;
@@ -88,7 +85,6 @@
 
     li {
       padding-left: 45px;
-
       &:first-child {
         padding-left: 0;
       }
@@ -117,6 +113,7 @@
         position: relative;
 
         &:hover {
+          opacity: 1;
           &::after {
             content: "";
             width: 100%;
@@ -134,7 +131,6 @@
     width: 39px;
     @include sp {
       width: 35px;
-     
     }
   }
   .c-header__icon {

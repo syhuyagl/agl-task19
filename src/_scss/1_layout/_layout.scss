@@ -1,12 +1,9 @@
 /* layout
 ------------------------------------------------------------*/
-@font-face {
-  font-family: "YuGothic";
-  src: url("../../assets/fonts/YuGothM.ttc");
-}
+
 
 body {
-  font-family: YuGothic;
+  font-family: $main-fonts;
   font-size: 1.4rem;
   line-height: 1.5;
   font-weight: 500;

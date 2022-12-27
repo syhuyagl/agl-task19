@@ -130,12 +130,51 @@ $(document).ready(function () {
   $("#postal").keyup(function () {
     AjaxZip3.zip2addr(this, "", "postal2", "postal2");
   });
+  $(".c-faq__topic")
+    .slice(0, 3)
+    .each(function () {
+      $(this)
+        .find(".c-faq__topicitem")
+        .find(".c-faq__answer")
+        .first()
+        .addClass("c-faq__answer--expand")
+        .slideDown();
+    });
   $(".c-faq__question").click(function () {
-    var answer = $(this).next();
+    var answer = $(this).parent().find(".c-faq__answer");
     if (answer.hasClass("c-faq__answer--expand")) {
       answer.removeClass("c-faq__answer--expand");
+      answer.slideUp();
+      $(this).get(0).style.setProperty("--deg", "0deg");
     } else {
       answer.addClass("c-faq__answer--expand");
+      answer.slideDown();
+      $(this).get(0).style.setProperty("--deg", "180deg");
+    }
+  });
+  $(".c-faq__navitem").click(function () {
+    var href = $(this).attr("id");
+    if ($(window).width() < 1024 && $(window).width() > 767) {
+      $("html, body").animate(
+        {
+          scrollTop: $(href).offset().top - 95,
+        },
+        "300"
+      );
+    } else if ($(window).width() < 768) {
+      $("html, body").animate(
+        {
+          scrollTop: $(href).offset().top - 57,
+        },
+        "300"
+      );
+    } else {
+      $("html, body").animate(
+        {
+          scrollTop: $(href).offset().top,
+        },
+        "300"
+      );
     }
   });
 });

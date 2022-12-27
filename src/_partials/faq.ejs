@@ -2,27 +2,33 @@
   <div class="l-container">
     <div class="c-faq__navitems">
         <% if (typeof faq != 'undefined') { %>
-            <% faq.items && faq.items.forEach(item => { %>
-                <div class="c-faq__navitem">
-                    <span class="c-faq__navitemttitle"><%=item.title%> </span>
-                  </div>
+            <% faq.items && faq.items.forEach((item,index) => { %>
+                <div id="#section<%=index+1%> " class="c-faq__navitem">
+                    <span class="c-faq__navitemttitle"><%=item.title%></span>
+                </div>
             <% }) %>
         <% } %>
     </div>
     <div class="c-faq__wrapper">
-        <div class="c-faq__topic">
-            <h3 class="c-faq__title">タクシーの利用について</h3>
-            <div class="c-faq__topicitems">
-                <div class="c-faq__topicitem">
-                    <div class="c-faq__question">
-                        <h4 class="c-faq__questiontitle">車いすはお借りできますか？</h4>
-                    </div>
-                    <div class="c-faq__answer c-faq__answer--expand">
-                        <p class="c-faq__answercontent">車いすはご用意しておりません。</p>
+        <% if (typeof faq != 'undefined') { %>
+            <% faq.items && faq.items.forEach((item,index) => { %>
+                <div class="c-faq__topic">
+                    <h3 class="c-faq__title" id = "section<%=index+1%>"><%=item.title%></h3>
+                    <div class="c-faq__topicitems">
+                        <% item.faqs && item.faqs.forEach(faq => { %>
+                            <div class="c-faq__topicitem">
+                                <div class="c-faq__question">
+                                    <h4 class="c-faq__questiontitle"><%=faq.question%></h4>
+                                </div>
+                                <div class="c-faq__answer">
+                                    <p class="c-faq__answercontent"><%=faq.answer%></p>
+                                </div>
+                            </div>
+                        <% }) %>
                     </div>
                 </div>
-            </div>
-        </div>
+            <% }) %>
+        <% } %>
     </div>
    
   
