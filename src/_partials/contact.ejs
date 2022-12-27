@@ -180,7 +180,7 @@
         </div>
         <div class="c-contact__formrow">
           <div class="c-contact__label">
-            <label class="c-contact__labelname" for="phone">お電話番号</label>
+            <label class="c-contact__labelname" for="phone1">お電話番号</label>
             <label class="c-contact__labelstatus u-required">必須</label>
           </div>
           <div class="c-contact__inputphone">
@@ -246,7 +246,7 @@
         </div>
         <div class="c-contact__formrow">
           <div class="c-contact__label">
-            <label class="c-contact__labelname" for="emailConfirm"
+            <label class="c-contact__labelname" for="email-confirm"
               >メールアドレス</label
             >
             <label class="c-contact__labelstatus u-required">確認用</label>
@@ -295,7 +295,7 @@
                 <% phoneList.items && phoneList.items.forEach((item) => { %>
                     <li class="c-contact__phoneitem">
                         <span class="c-contact__phonelabel"><%= item.name %></span>
-                        <a class="c-contact__phonenumber" href="tel: <%=item.number%>"><%= item.number %></a>
+                        <a class="c-contact__phonenumber" href="tel:<%=item.number%>"><%= item.number %></a>
                       </li>
                 <% }) %>
             <% } %>

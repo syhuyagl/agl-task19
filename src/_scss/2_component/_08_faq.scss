@@ -15,7 +15,6 @@ list
     display: flex;
     flex-wrap: wrap;
     margin-top: 80px;
-
   }
   .c-faq__navitem {
     padding: 17px 10px 17px 23px;
@@ -70,6 +69,7 @@ list
     padding: 26px 0;
     position: relative;
     border-bottom: 1px solid #ccc;
+    color: $black;
     transition: 0.4s;
     &:hover {
       cursor: pointer;
@@ -87,7 +87,7 @@ list
       transform: translateY(-40%) rotate(var(--deg));
     }
     @include sp {
-      &::after{
+      &::after {
         right: 10px;
       }
     }
@@ -135,7 +135,7 @@ list
       &::before {
         transform: translateY(-50%);
         top: 50%;
-        }
+      }
     }
   }
   .c-faq__topic {
@@ -163,6 +163,7 @@ list
   .c-faq__answer {
     margin-top: 8px;
     border-bottom: 1px solid #ccc;
+    color: $black;
     padding: 45px 0;
     display: none;
   }
