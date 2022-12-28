@@ -47,6 +47,7 @@ footer
     @include sp {
       font-size: 2rem;
       transform: translateY(16px);
+      text-shadow: 0px 0px 8px rgba(0, 0, 0, 0.46);
       letter-spacing: -1.7px;
       max-width: 276px;
       margin: 0 auto;
@@ -250,7 +251,7 @@ footer
     font-weight: 500;
     color: #fff;
     background: $black;
-    padding: 20px 0;
+    padding: 19px 7px 20px 0;
     letter-spacing: 0.9px;
     @include sp {
       padding: 10px 0 9px;

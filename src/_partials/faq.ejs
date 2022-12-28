@@ -3,7 +3,7 @@
     <div class="c-faq__navitems">
         <% if (typeof faq != 'undefined') { %>
             <% faq.items && faq.items.forEach((item,index) => { %>
-                <div id="#section<%=index+1%> " class="c-faq__navitem">
+                <div id="#section<%=index+1%>" class="c-faq__navitem">
                     <span class="c-faq__navitemttitle"><%=item.title%></span>
                 </div>
             <% }) %>
@@ -16,14 +16,14 @@
                     <h3 class="c-faq__title" id = "section<%=index+1%>"><%=item.title%></h3>
                     <div class="c-faq__topicitems">
                         <% item.faqs && item.faqs.forEach(faq => { %>
-                            <div class="c-faq__topicitem">
-                                <div class="c-faq__question">
+                            <dl class="c-faq__topicitem">
+                                <dt class="c-faq__question">
                                     <h4 class="c-faq__questiontitle"><%=faq.question%></h4>
-                                </div>
-                                <div class="c-faq__answer">
+                                </dt>
+                                <dd class="c-faq__answer">
                                     <p class="c-faq__answercontent"><%=faq.answer%></p>
-                                </div>
-                            </div>
+                                </dd>
+                            </dl>
                         <% }) %>
                     </div>
                 </div>

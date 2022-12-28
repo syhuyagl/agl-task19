@@ -31,6 +31,7 @@ text
     width: fit-content;
     @include sp {
       letter-spacing: -0.3px;
+      color: #222;
       padding: 5px 10px 2px 10px;
     }
   }

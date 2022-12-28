@@ -70,12 +70,15 @@ $(document).ready(function () {
     rules: {
       phone1: {
         required: true,
+        number:true
       },
       phone2: {
         required: true,
+        number:true
       },
       phone3: {
         required: true,
+        number:true
       },
       address: {
         required: true,
